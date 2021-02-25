@@ -1,0 +1,20 @@
+[user]
+	name = Navneet Dhody
+	email = navneet.dhody@gmail.com
+[color]
+	ui = auto
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[difftool]
+	prompt = false
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[mergetool]
+	prompt = false
+[pull]
+	rebase = false
+[credential]
+	helper = cache
