@@ -1,0 +1,22 @@
+" vimrc
+
+" NOT behave very Vi compatible
+set nocompatible
+
+" Packages
+packadd! matchit
+packadd! justify
+packadd! fzf
+packadd! fzf.vim
+packadd! gruvbox
+packadd! vim-dirvish
+packadd! vim-restructuredtext
+packadd! vim-lsp
+packadd! vim-lsp-settings
+packadd! asyncomplete.vim
+packadd! asyncomplete-lsp.vim
+packadd! lightline.vim
+
+" auto filetype detection
+filetype plugin indent on
+
