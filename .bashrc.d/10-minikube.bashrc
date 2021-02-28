@@ -1,0 +1,3 @@
+# minikube
+
+. <(minikube completion bash)
