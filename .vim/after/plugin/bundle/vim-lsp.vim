@@ -1,6 +1,5 @@
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
-    setlocal signcolumn=number
     setlocal tagfunc=lsp#tagfunc 
 
     nmap <buffer> <leader>ga <plug>(lsp-code-action)
@@ -19,7 +18,7 @@ function! s:on_lsp_buffer_enabled() abort
     nmap <buffer> <leader>gI <plug>(lsp-peek-implementation)
     nmap <buffer> <leader>gt <plug>(lsp-type-definition)
     nmap <buffer> <leader>gT <plug>(lsp-peek-type-definition)
-    nmap <buffer> <leader>ge <plug>(lsp-document-diagnostics)
+    nmap <buffer> <leader>gx <plug>(lsp-document-diagnostics)
     nmap <buffer> [g <plug>(lsp-previous-diagnostic)
     nmap <buffer> ]g <plug>(lsp-next-diagnostic)
     nmap <buffer> <leader>gg <plug>(lsp-status)
@@ -28,7 +27,7 @@ function! s:on_lsp_buffer_enabled() abort
 
     let g:lsp_format_sync_timeout = 1000
     autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
-    
+
 endfunction
 
 augroup lsp_install
