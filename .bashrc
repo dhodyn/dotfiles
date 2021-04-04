@@ -2,7 +2,7 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+        . /etc/bashrc
 fi
 
 # User specific environment
@@ -16,12 +16,12 @@ export PATH
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-# return if not interactive shell
-if [[ $- != *i* ]]; then return; fi
-
 if [ -d ~/.bashrc.d ]; then
-   for file in ~/.bashrc.d/*.bashrc; do
-       . $file
-   done
+    for rc in ~/.bashrc.d/*; do
+        if [ -f "$rc" ]; then
+            . "$rc"
+        fi
+    done
 fi
 
+unset rc
