@@ -18,16 +18,19 @@ noremap <silent> ]B :blast<CR>
 noremap <silent> <C-l> :<C-u>nohlsearch<CR>:<C-u>syntax sync fromstart<CR><C-l>
 
 " toggle list
-noremap <leader>l :setlocal list!<CR>:set list?<CR>
+noremap <leader>tl :setlocal list!<CR>:set list?<CR>
 
 " toggle spell
-noremap <leader>s :setlocal spell!<CR>:set spell?<CR>
+noremap <leader>ts :setlocal spell!<CR>:set spell?<CR>
 
 " toggle wordwrap
-noremap <leader>w :setlocal wrap!<CR>:set wrap?<CR>
+noremap <leader>tw :setlocal wrap!<CR>:set wrap?<CR>
 
 " toggle number mode
-noremap <silent> <leader>n :call mappings#toggle_number_mode()<CR>
+noremap <silent> <leader>tn :call mappings#toggle_number_mode()<CR>
+
+" toggle paste mode
+set pastetoggle=<leader>tp
 
 " zap trailing whitespace
 noremap <silent> <leader>zz :call mappings#zap()<CR>
