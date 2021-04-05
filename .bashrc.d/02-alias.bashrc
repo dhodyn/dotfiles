@@ -9,5 +9,5 @@ alias rm='rm -I'
 alias mkdir='mkdir -p'
 alias os='uname -r'
 alias rbrc='. ~/.bashrc'
-alias dotfiles='git --git-dir=${HOME}/.dotfiles/.git --work-tree=${HOME}'
+alias dotfiles='git --git-dir=${HOME}/.dotfiles_toolbox/.git --work-tree=${HOME}'
 
