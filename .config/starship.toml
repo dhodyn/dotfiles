@@ -63,7 +63,7 @@ error_symbol = "[\\$](bold red)"
 disabled = true
 
 [directory]
-truncation_length = 100
+truncation_length = 0
 
 [hostname]
 ssh_only = false
