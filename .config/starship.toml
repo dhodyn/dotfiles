@@ -1,2 +1,12 @@
+[character]
+success_symbol = "[\\$](bold green)"
+error_symbol = "[\\$](bold red)"
+
 [cmd_duration]
 disabled = true
+
+[hostname]
+ssh_only = false
+
+[username]
+show_always = true
