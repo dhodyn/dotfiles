@@ -33,7 +33,7 @@ noremap <silent> <leader>tn :call mappings#toggle_number_mode()<CR>
 set pastetoggle=<leader>tp
 
 " zap trailing whitespace
-noremap <silent> <leader>zz :call mappings#zap()<CR>
+noremap <silent> <leader>zz :call mappings#zap()<CR><C-o>
 
 " %% in the command mode returns the current path
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
