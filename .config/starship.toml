@@ -1,3 +1,60 @@
+format = """
+$username\
+$hostname\
+$directory\
+$shlvl\
+$kubernetes\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$dart\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$kotlin\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$purescript\
+$python\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vagrant\
+$zig\
+$nix_shell\
+$conda\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$env_var\
+$crystal\
+$custom\
+$cmd_duration\
+$line_break\
+$lua\
+$jobs\
+$battery\
+$time\
+$status\
+$shell\
+$character"""
+
 [character]
 success_symbol = "[\\$](bold green)"
 error_symbol = "[\\$](bold red)"
@@ -5,8 +62,13 @@ error_symbol = "[\\$](bold red)"
 [cmd_duration]
 disabled = true
 
+[directory]
+truncation_length = 100
+
 [hostname]
 ssh_only = false
+format = "[$hostname]($style):"
 
 [username]
 show_always = true
+format = "[$user]($style)@"
