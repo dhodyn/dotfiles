@@ -10,8 +10,7 @@ truncation_length = 0
 
 [hostname]
 ssh_only = false
-format = "[$hostname]($style):"
 
 [username]
 show_always = true
-format = "[$user]($style)@"
+
