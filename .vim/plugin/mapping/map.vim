@@ -29,6 +29,9 @@ noremap <leader>tw :setlocal wrap!<CR>:set wrap?<CR>
 " toggle number mode
 noremap <silent> <leader>tn :call mappings#toggle_number_mode()<CR>
 
+" toggle sign column
+noremap <leader>tg :call mappings#toggle_sign_column()<CR>:set signcolumn?<CR>
+
 " toggle paste mode
 set pastetoggle=<leader>tp
 

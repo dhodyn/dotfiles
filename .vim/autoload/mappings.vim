@@ -1,17 +1,30 @@
 " toggle number mode
 function! mappings#toggle_number_mode()
     if (&number==0 && &relativenumber==0)
-        set number
-        set relativenumber
+        setlocal number
+        setlocal relativenumber
     elseif (&number==0 && &relativenumber==1)
-        set number
-        set norelativenumber
+        setlocal number
+        setlocal norelativenumber
     elseif (&number==1 && !&relativenumber==0)
-        set nonumber
-        set relativenumber
+        setlocal nonumber
+        setlocal relativenumber
     else
-        set nonumber
-        set norelativenumber
+        setlocal nonumber
+        setlocal norelativenumber
+    endif
+endfunction
+
+" toggle sign column
+function! mappings#toggle_sign_column()
+    if (&signcolumn=="number")
+        setlocal signcolumn=auto
+    elseif (&signcolumn=="auto")
+        setlocal signcolumn=no
+    elseif (&signcolumn=="no")
+        setlocal signcolumn=yes
+    else
+        setlocal signcolumn=number
     endif
 endfunction
 
