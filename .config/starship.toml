@@ -1,16 +1,6 @@
-[character]
-success_symbol = "[\\$](bold green)"
-error_symbol = "[\\$](bold red)"
-
 [cmd_duration]
 disabled = true
 
 [directory]
 truncation_length = 0
-
-[hostname]
-ssh_only = false
-
-[username]
-show_always = true
-
+truncate_to_repo = false
