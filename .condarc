@@ -1,3 +1,6 @@
 channel_priority: strict
 envs_dirs:
   - ~/miniconda3/envs
+channels:
+  - conda-forge
+  - defaults
