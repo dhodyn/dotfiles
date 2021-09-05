@@ -1,6 +1,5 @@
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
-    setlocal signcolumn=yes
     setlocal tagfunc=lsp#tagfunc 
 
     nmap <buffer> <leader>ga <plug>(lsp-code-action)
@@ -37,16 +36,11 @@ augroup lsp_install
     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
 
-let g:lsp_preview_float = 0
-autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
-let g:lsp_preview_doubletap = 0
-
-"let g:lsp_preview_doubletap = [function('lsp#ui#vim#output#closepreview')]
-
+let g:lsp_preview_doubletap = [function('lsp#ui#vim#output#closepreview')]
 let g:lsp_diagnostics_echo_cursor = 1
 let g:lsp_diagnostics_virtual_text_enabled = 0
 let g:lsp_diagnostics_highlights_enabled = 0
-"let g:lsp_diagnostics_signs_insert_mode_enabled = 0
+let g:lsp_diagnostics_signs_insert_mode_enabled = 0
 
 if (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
     let g:lsp_diagnostics_signs_error = {'text': '✗'}
