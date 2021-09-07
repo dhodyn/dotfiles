@@ -18,7 +18,7 @@ function! s:on_lsp_buffer_enabled() abort
     nmap <buffer> <leader>gI <plug>(lsp-peek-implementation)
     nmap <buffer> <leader>gt <plug>(lsp-type-definition)
     nmap <buffer> <leader>gT <plug>(lsp-peek-type-definition)
-    nmap <buffer> <leader>gx <plug>(lsp-document-diagnostics)
+    nmap <buffer> <leader>ge <plug>(lsp-document-diagnostics)
     nmap <buffer> [g <plug>(lsp-previous-diagnostic)
     nmap <buffer> ]g <plug>(lsp-next-diagnostic)
     nmap <buffer> <leader>gg <plug>(lsp-status)
@@ -28,6 +28,8 @@ function! s:on_lsp_buffer_enabled() abort
     let g:lsp_format_sync_timeout = 1000
     autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
 
+    autocmd User lsp_float_opened nmap <buffer> <silent> <esc> <plug>(lsp-preview-close)
+    autocmd User lsp_float_closed nunmap <buffer> <esc>
 
 endfunction
 
