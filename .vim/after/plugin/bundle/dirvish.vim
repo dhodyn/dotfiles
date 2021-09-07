@@ -12,13 +12,5 @@ augroup dirvish_config
     " hide dot-prefixed files
     autocmd FileType dirvish nnoremap <silent><buffer>
     \ <leader>h :silent keeppatterns g@\v/\.[^\/]+/?$@d _<CR>:setl cole=3<CR>
-
-    " local: make the browsing directory the current directory
-    autocmd FileType dirvish nnoremap <silent><buffer>
-    \ <leader>lcd :<C-u>lcd %<CR>:echo "cwd:" expand("%:h")<CR>
-
-    " global: make the browsing directory the current directory
-    autocmd FileType dirvish nnoremap <silent><buffer>
-    \ <leader>cd :<C-u>cd %<CR>:echo "cwd:" expand("%:h")<CR>
 augroup END
 
