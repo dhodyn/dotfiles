@@ -29,8 +29,19 @@ function! s:on_lsp_buffer_enabled() abort
     let g:lsp_format_sync_timeout = 1000
     autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
 
-    autocmd User lsp_float_opened nmap <buffer> <silent> <esc> <plug>(lsp-preview-close)
-    autocmd User lsp_float_closed nunmap <buffer> <esc>
+    augroup on_lsp_float_opened
+        autocmd!
+        autocmd User lsp_float_opened nmap <buffer> <silent> <esc> <plug>(lsp-preview-close)
+        autocmd User lsp_float_opened nmap <buffer> <silent> <expr><c-f> lsp#scroll(+4)
+        autocmd User lsp_float_opened nmap <buffer> <silent> <expr><c-b> lsp#scroll(-4)
+    augroup END
+
+    augroup on_lsp_float_closed
+        autocmd!
+        autocmd User lsp_float_closed nunmap <buffer> <esc>
+        autocmd User lsp_float_closed nunmap <buffer> <c-f>
+        autocmd User lsp_float_closed nunmap <buffer> <c-b>
+    augroup END
 
 endfunction
 
