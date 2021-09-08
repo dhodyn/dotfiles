@@ -19,6 +19,7 @@ function! s:on_lsp_buffer_enabled() abort
     nmap <buffer> <leader>gt <plug>(lsp-type-definition)
     nmap <buffer> <leader>gT <plug>(lsp-peek-type-definition)
     nmap <buffer> <leader>ge <plug>(lsp-document-diagnostics)
+    nmap <buffer> <leader>gh <plug>(lsp-signature-help)
     nmap <buffer> [g <plug>(lsp-previous-diagnostic)
     nmap <buffer> ]g <plug>(lsp-next-diagnostic)
     nmap <buffer> <leader>gg <plug>(lsp-status)
@@ -47,6 +48,7 @@ let g:lsp_diagnostics_signs_insert_mode_enabled = 0
 if (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
     let g:lsp_diagnostics_signs_error = {'text': '✗'}
     let g:lsp_diagnostics_signs_warning = {'text': '‼'}
-    let g:lsp_diagnostics_signs_information = {'text': 'ℹ'}
-    let g:lsp_diagnostics_signs_hint = {'text': '❯'}
+    let g:lsp_diagnostics_signs_information = {'text': '❯'}
+    let g:lsp_diagnostics_signs_hint = {'text': '⚙'}
+	let g:lsp_document_code_action_signs_hint = {'text': '☇'}
 endif
