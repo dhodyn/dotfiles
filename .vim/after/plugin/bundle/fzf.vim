@@ -7,8 +7,8 @@ noremap <silent> <leader>fw :Windows<CR>
 noremap <silent> <leader>fc :Colors<CR>
 noremap <silent> <leader>fC :Commands<CR>
 noremap <silent> <leader>fr :Rg<CR>
-noremap <silent> <leader>f/ :Lines<CR>
-noremap <silent> <leader>f? :BLines<CR>
+noremap <silent> <leader>f/ :BLines<CR>
+noremap <silent> <leader>f? :Lines<CR>
 noremap <silent> <leader>f] :Tags<CR>
 noremap <silent> <leader>f} :BTags<CR>
 noremap <silent> <leader>fm :Marks<CR>
