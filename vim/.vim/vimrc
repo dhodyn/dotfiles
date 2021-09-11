@@ -15,6 +15,7 @@ packadd! vim-lsp
 packadd! vim-lsp-settings
 packadd! asyncomplete.vim
 packadd! asyncomplete-lsp.vim
+packadd! vim-fugitive
 packadd! lightline.vim
 
 " auto filetype detection
