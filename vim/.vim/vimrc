@@ -6,16 +6,19 @@ set nocompatible
 " Packages
 packadd! matchit
 packadd! justify
+
+packadd! asyncomplete-lsp.vim
+packadd! asyncomplete.vim
 packadd! fzf
 packadd! fzf.vim
 packadd! gruvbox
+packadd! vim-commentary
 packadd! vim-dirvish
-packadd! vim-restructuredtext
+packadd! vim-fugitive
 packadd! vim-lsp
 packadd! vim-lsp-settings
-packadd! asyncomplete.vim
-packadd! asyncomplete-lsp.vim
-packadd! vim-fugitive
+packadd! vim-restructuredtext
+
 packadd! lightline.vim
 
 " auto filetype detection

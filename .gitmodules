@@ -31,3 +31,6 @@
 [submodule "vim/.vim/pack/bundle/opt/vim-fugitive"]
 	path = vim/.vim/pack/bundle/opt/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/.vim/pack/bundle/opt/vim-commentary"]
+	path = vim/.vim/pack/bundle/opt/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
