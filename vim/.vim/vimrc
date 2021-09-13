@@ -12,15 +12,17 @@ packadd! asyncomplete.vim
 packadd! fzf
 packadd! fzf.vim
 packadd! gruvbox
+packadd! lightline.vim
 packadd! vim-commentary
 packadd! vim-dirvish
 packadd! vim-fugitive
 packadd! vim-lsp
 packadd! vim-lsp-settings
+packadd! vim-repeat
 packadd! vim-restructuredtext
+packadd! vim-surround
 
 packadd! lightline.vim
 
 " auto filetype detection
 filetype plugin indent on
-

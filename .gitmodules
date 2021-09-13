@@ -1,9 +1,6 @@
 [submodule "vim/dot-vim/pack/bundle/opt/fzf.vim"]
 	path = vim/.vim/pack/bundle/opt/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
-[submodule "vim/dot-vim/pack/bundle/opt/gruvbox"]
-	path = vim/.vim/pack/bundle/opt/gruvbox
-	url = https://github.com/morhetz/gruvbox
 [submodule "vim/dot-vim/pack/bundle/opt/vim-restructuredtext"]
 	path = vim/.vim/pack/bundle/opt/vim-restructuredtext
 	url = https://github.com/marshallward/vim-restructuredtext
@@ -34,3 +31,12 @@
 [submodule "vim/.vim/pack/bundle/opt/vim-commentary"]
 	path = vim/.vim/pack/bundle/opt/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule "vim/.vim/pack/bundle/opt/gruvbox"]
+	path = vim/.vim/pack/bundle/opt/gruvbox
+	url = https://github.com/gruvbox-community/gruvbox.git
+[submodule "vim/.vim/pack/bundle/opt/vim-surround"]
+	path = vim/.vim/pack/bundle/opt/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/.vim/pack/bundle/opt/vim-repeat"]
+	path = vim/.vim/pack/bundle/opt/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
