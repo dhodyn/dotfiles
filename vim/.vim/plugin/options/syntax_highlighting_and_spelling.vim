@@ -20,4 +20,3 @@ endif
 
 " NOT highlight spelling mistakes
 set nospell
-

@@ -15,4 +15,3 @@ endif
 
 " automatically read a file when it was modified outside of Vim
 set autoread
-

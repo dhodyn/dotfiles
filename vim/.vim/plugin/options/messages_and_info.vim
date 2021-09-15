@@ -11,4 +11,3 @@ set ruler
 
 " use a visual bell instead of beeping
 set visualbell
-

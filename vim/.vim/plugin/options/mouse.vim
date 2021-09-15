@@ -10,7 +10,3 @@ if has("mouse")
     " type of mouse
     set ttymouse=xterm
 endif
-
-
-
-

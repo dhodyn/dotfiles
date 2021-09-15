@@ -30,4 +30,3 @@ set nrformats-=octal
 
 " Remove comment leader when joining lines
 set formatoptions+=j
-
