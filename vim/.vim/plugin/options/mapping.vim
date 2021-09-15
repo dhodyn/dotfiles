@@ -11,4 +11,3 @@ set timeoutlen=1000
 
 " time in msec for 'ttimeout'
 set ttimeoutlen=100
-

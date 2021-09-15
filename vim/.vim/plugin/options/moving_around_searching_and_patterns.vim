@@ -20,4 +20,3 @@ set wrapscan
 
 " change the way backslashes are used in search patterns
 set magic
-

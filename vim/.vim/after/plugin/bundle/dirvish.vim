@@ -13,4 +13,3 @@ augroup dirvish_config
     autocmd FileType dirvish nnoremap <silent><buffer>
     \ <leader>h :silent keeppatterns g@\v/\.[^\/]+/?$@d _<CR>:setl cole=3<CR>
 augroup END
-

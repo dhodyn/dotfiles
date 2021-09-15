@@ -33,4 +33,3 @@ set number
 
 " show the relative line number for each line
 set relativenumber
-

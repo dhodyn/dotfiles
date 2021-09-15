@@ -8,4 +8,3 @@ set wildmenu
 
 " how command line completion works
 set wildmode=longest:full,full
-

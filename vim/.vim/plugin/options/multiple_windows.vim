@@ -11,4 +11,3 @@ set splitbelow
 
 " a new window is put right of the current one
 set splitright
-
