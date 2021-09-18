@@ -21,6 +21,7 @@ packadd! vim-lsp-settings
 packadd! vim-repeat
 packadd! vim-restructuredtext
 packadd! vim-surround
+packadd! vim-unimpaired
 
 packadd! lightline.vim
 
