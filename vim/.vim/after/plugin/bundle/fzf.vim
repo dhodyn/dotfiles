@@ -12,11 +12,11 @@ noremap <silent> <leader>f] :Tags<CR>
 noremap <silent> <leader>f} :BTags<CR>
 noremap <silent> <leader>fm :Marks<CR>
 noremap <silent> <leader>fw :Windows<CR>
-noremap <silent> <leader>fo :History<CR>
+noremap <silent> <leader>fH :History<CR>
 noremap <silent> <leader>f: :History:<CR>
 noremap <silent> <leader>fs :History/<CR>
-noremap <silent> <leader>fj :Commits<CR>
-noremap <silent> <leader>fJ :BCommits<CR>
+noremap <silent> <leader>fo :Commits<CR>
+noremap <silent> <leader>fO :BCommits<CR>
 noremap <silent> <leader>fC :Commands<CR>
 noremap <silent> <leader>fM :Maps<CR>
 noremap <silent> <leader>fh :Helptags<CR>
