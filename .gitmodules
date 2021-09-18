@@ -40,3 +40,6 @@
 [submodule "vim/.vim/pack/bundle/opt/vim-repeat"]
 	path = vim/.vim/pack/bundle/opt/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule "vim/.vim/pack/bundle/opt/vim-unimpaired"]
+	path = vim/.vim/pack/bundle/opt/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
