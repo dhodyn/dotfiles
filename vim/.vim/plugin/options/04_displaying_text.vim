@@ -13,7 +13,7 @@ set breakindent
 " let &showbreak='\ '
 
 " minimal number of columns to keep left and right of the cursor
-set sidescrolloff=5
+set sidescrolloff=1
 
 " include "lastline" to show the last line even if it doesn't fit
 set display=lastline
