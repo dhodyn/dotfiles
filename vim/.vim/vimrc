@@ -4,6 +4,8 @@
 set nocompatible
 
 " Packages
+runtime ftplugin/man.vim
+
 packadd! matchit
 packadd! justify
 
