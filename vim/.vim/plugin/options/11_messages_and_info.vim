@@ -1,4 +1,4 @@
-" messages and info
+" 11 messages and info
 
 " show (partial) command keys in the status line
 set showcmd
@@ -9,5 +9,8 @@ set showmode
 " show cursor position below each window
 set ruler
 
-" use a visual bell instead of beeping
-set visualbell
+" pause listings when the screen if full
+set more
+
+" do not ring the bell for these reasons
+set belloff=all

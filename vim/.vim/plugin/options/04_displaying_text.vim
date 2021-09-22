@@ -1,10 +1,7 @@
-" displaying text
+" 4 displaying text
 
 " number of screen lines to show around the cursor
 set scrolloff=1
-
-" long lines wrap
-set wrap
 
 " wrap long lines at a character in 'breakat'
 set linebreak 
@@ -19,7 +16,7 @@ set breakindent
 set sidescrolloff=5
 
 " include 'lastline' to show the last line even if it doesn't fit
-set display+=lastline
+set display=lastline,msgsep
 
 " don't redraw while executing macros
 set lazyredraw
@@ -33,3 +30,6 @@ set number
 
 " show the relative line number for each line
 set relativenumber
+
+" number of columns to use for the line number
+set numberwidth=4

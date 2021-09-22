@@ -1,4 +1,4 @@
-" using the mouse
+" 9 using the mouse
 
 if has("mouse")
     " list of flags for using the mouse

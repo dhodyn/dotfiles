@@ -1,4 +1,4 @@
-" editing text
+" 13 editing text
 
 if has("persistent_undo")
     " automatically save and restore undo history
@@ -16,6 +16,9 @@ endif
 " specifies what <BS>, CTRL-W, etc. can do in Insert mode
 set backspace=indent,eol,start
 
+" list of flags that tell how automatic formatting works
+set formatoptions=tcqj
+
 " adjust case of a keyword completion match
 set infercase
 
@@ -25,8 +28,5 @@ set showmatch
 " NOT use two spaces after '.' when joining a line
 set nojoinspaces
 
-" Remove 'octal' number format for CTRL-A and CTRL-X commands
-set nrformats-=octal
-
-" Remove comment leader when joining lines
-set formatoptions+=j
+" "alpha", "octal", "hex", "bin" and/or "unsigned"; number formats
+set nrformats=bin,hex
