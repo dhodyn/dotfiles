@@ -15,8 +15,8 @@ set breakindent
 " minimal number of columns to keep left and right of the cursor
 set sidescrolloff=5
 
-" include 'lastline' to show the last line even if it doesn't fit
-set display=lastline,msgsep
+" include "lastline" to show the last line even if it doesn't fit
+set display=lastline
 
 " don't redraw while executing macros
 set lazyredraw
