@@ -1,4 +1,4 @@
-" multiple windows
+" 6 multiple windows
 
 " when to use a status line for the last window
 set laststatus=2

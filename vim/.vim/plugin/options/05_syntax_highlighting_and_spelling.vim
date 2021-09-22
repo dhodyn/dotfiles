@@ -1,4 +1,4 @@
-" syntax, highlight, and spelling
+" 5 syntax, highlight, and spelling
 
 if &t_Co > 2 || has("gui_running")
     " the background color brightness
@@ -18,5 +18,5 @@ if &t_Co > 2 || has("gui_running")
 
 endif
 
-" NOT highlight spelling mistakes
+" highlight spelling mistakes
 set nospell

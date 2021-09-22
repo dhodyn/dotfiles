@@ -1,4 +1,4 @@
-" tabs and indenting
+" 14 tabs and indenting
 
 " number of spaces a <Tab> in the text stands for
 set tabstop=4

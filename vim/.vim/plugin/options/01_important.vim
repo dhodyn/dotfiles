@@ -1,7 +1,13 @@
-" important
+" 1 important
 
-" NOT use Insert mode as the default mode
+" behave very Vi compatible (not advisable)
+set nocompatible
+
+" list of flags to specify Vi compatibility
+set cpoptions=aABceFs_
+
+" use Insert mode as the default mode
 set noinsertmode
 
-" NOT paste mode
+" paste mode
 set nopaste
