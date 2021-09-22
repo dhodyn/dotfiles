@@ -10,13 +10,13 @@ inoremap <C-u> <C-g>u<C-u>
 inoremap <C-w> <C-g>u<C-w>
 
 " open a new buffer
-nnoremap <leader>B <cmd>enew<CR>
+nnoremap <leader>B <Cmd>enew<CR>
 
 " clear the search and redraw the screen
-nnoremap <C-l> <cmd>nohlsearch<bar>diffupdate<bar>syntax sync fromstart<CR><C-l>
+nnoremap <C-l> <Cmd>nohlsearch<Bar>diffupdate<Bar>syntax sync fromstart<CR><C-l>
 
 " zap trailing whitespace
-nnoremap <leader>zz <cmd>call mappings#zap()<CR>
+nnoremap <leader>zz <Cmd>call mappings#zap()<CR>
 
 " %% in the command mode returns the current path
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
