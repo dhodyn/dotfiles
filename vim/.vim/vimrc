@@ -1,8 +1,5 @@
 " vimrc
 
-" NOT behave very Vi compatible
-set nocompatible
-
 " Packages
 runtime ftplugin/man.vim
 
