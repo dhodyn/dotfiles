@@ -1,18 +1,22 @@
 " arrow keys move screenlines when text is wrapped
-noremap <Up> gk
-noremap <Down> gj
+nnoremap <Up> gk
+nnoremap <Down> gj
 
 " consistent yank behaviour
-noremap Y y$
+nnoremap Y y$
+
+" undo behaviour in insert mode
+inoremap <C-u> <C-g>u<C-u>
+inoremap <C-w> <C-g>u<C-w>
 
 " open a new buffer
-noremap <silent> <leader>B :enew<CR>
+nnoremap <leader>B <cmd>enew<CR>
 
 " clear the search and redraw the screen
-noremap <silent> <C-l> :<C-u>nohlsearch<CR>:<C-u>syntax sync fromstart<CR><C-l>
+nnoremap <C-l> <cmd>nohlsearch<bar>diffupdate<bar>syntax sync fromstart<CR><C-l>
 
 " zap trailing whitespace
-noremap <silent> <leader>zz :call mappings#zap()<CR><C-o>
+nnoremap <leader>zz <cmd>call mappings#zap()<CR>
 
 " %% in the command mode returns the current path
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
