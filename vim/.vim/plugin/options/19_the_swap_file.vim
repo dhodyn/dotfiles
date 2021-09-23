@@ -6,3 +6,4 @@ if has("unix")
 elseif has("win32") && !has("unix")
     set directory=~/cache/vim/swap//,~/local/share/vim/swap//,~/vimfiles/swap//,.,$TEMP,c:/tmp,c:/temp
 endif
+

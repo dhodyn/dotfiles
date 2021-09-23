@@ -33,3 +33,4 @@ set relativenumber
 
 " number of columns to use for the line number
 set numberwidth=4
+

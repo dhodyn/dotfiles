@@ -8,3 +8,4 @@ set vi=!,'100,<50,s10,h
 
 " show the sign column
 set signcolumn=yes
+

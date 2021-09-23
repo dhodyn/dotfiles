@@ -63,3 +63,4 @@ if (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
     let g:lsp_diagnostics_signs_hint = {'text': '⚙'}
 	let g:lsp_document_code_action_signs_hint = {'text': '☇'}
 endif
+

@@ -8,3 +8,4 @@ set termencoding=utf-8
 
 " maximum number of combining (composing) charaters to displayed
 set maxcombine=6
+

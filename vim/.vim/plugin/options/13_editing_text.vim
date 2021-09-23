@@ -33,3 +33,4 @@ set nojoinspaces
 
 " "alpha", "octal", "hex", "bin" and/or "unsigned"; number formats
 set nrformats=bin,hex
+

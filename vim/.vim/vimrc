@@ -25,3 +25,4 @@ packadd! lightline.vim
 
 " auto filetype detection
 filetype plugin indent on
+
