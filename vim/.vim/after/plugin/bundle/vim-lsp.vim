@@ -12,7 +12,7 @@ function! s:on_lsp_buffer_enabled() abort
     nmap <buffer> <leader>gr <plug>(lsp-references)
     nmap <buffer> <leader>gR <plug>(lsp-rename)
     nmap <buffer> <leader>gS <plug>(lsp-workspace-symbol-search)
-    nmap <buffer> K <plug>(lsp-hover)
+    nmap <buffer> <leader>gK <plug>(lsp-hover)
     nmap <buffer> <leader>g= <plug>(lsp-document-format)
     nmap <buffer> <leader>gi <plug>(lsp-implementation)
     nmap <buffer> <leader>gI <plug>(lsp-peek-implementation)
