@@ -39,8 +39,8 @@ function! s:on_lsp_buffer_enabled() abort
     augroup on_lsp_float_closed
         autocmd!
         autocmd User lsp_float_closed nunmap <buffer> <esc>
-        autocmd User lsp_float_closed nunmap <buffer> <c-f>
-        autocmd User lsp_float_closed nunmap <buffer> <c-b>
+        autocmd User lsp_float_closed nunmap <buffer> <C-f>
+        autocmd User lsp_float_closed nunmap <buffer> <C-b>
     augroup END
 
 endfunction
