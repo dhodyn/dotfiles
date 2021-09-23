@@ -21,3 +21,4 @@ noremap <silent> <leader>fC <Cmd>Commands<CR>
 noremap <silent> <leader>fM <Cmd>Maps<CR>
 noremap <silent> <leader>fh <Cmd>Helptags<CR>
 noremap <silent> <leader>ft <Cmd>Filetypes<CR>
+

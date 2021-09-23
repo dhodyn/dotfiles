@@ -5,3 +5,4 @@ set ttimeout
 
 " time in msec for 'ttimeout'
 set ttimeoutlen=50
+

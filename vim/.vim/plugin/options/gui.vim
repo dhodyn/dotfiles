@@ -12,3 +12,4 @@ if has("gui_running")
     set guioptions=c
 
 endif
+

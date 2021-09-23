@@ -5,3 +5,4 @@ set shelltemp
 
 " program used for the "K" command
 set kp=:Man
+

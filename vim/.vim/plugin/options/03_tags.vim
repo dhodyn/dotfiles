@@ -5,3 +5,4 @@ set tagrelative
 
 " give messages when adding a cscope database
 set cscopeverbose
+

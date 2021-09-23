@@ -20,3 +20,4 @@ nnoremap <leader>zz <Cmd>call mappings#zap()<CR>
 
 " %% in the command mode returns the current path
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+

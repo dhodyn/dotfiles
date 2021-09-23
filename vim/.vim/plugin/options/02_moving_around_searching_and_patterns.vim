@@ -14,3 +14,4 @@ set ignorecase
 
 " override 'ignorecase' when pattern has upper case characters
 set smartcase
+

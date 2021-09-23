@@ -14,3 +14,4 @@ set wildmode=longest:full,full
 
 " key used to open the command-line window
 set cedit=^F
+

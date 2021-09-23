@@ -2,3 +2,4 @@
 function! mappings#zap() abort
     %s/\s*$//
 endfunction
+
