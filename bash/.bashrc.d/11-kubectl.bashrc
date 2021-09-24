@@ -1,3 +1,4 @@
 # kubectl
 
 . <(kubectl completion bash)
+
