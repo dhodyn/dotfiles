@@ -1,4 +1,4 @@
-# alias.bashrc
+# alias
 
 alias ll='ls -la'
 alias l='ls'
