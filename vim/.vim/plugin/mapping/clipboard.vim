@@ -35,9 +35,15 @@ else
     endif
     
     " paste from system clipboard
-    map <silent> <S-Insert> :let @c=system('xclip -out')<CR>"cgP
-    map <silent> <leader>P :let @c=system('xclip -out')<CR>"cgP
-    map <silent> <leader>p :let @c=system('xclip -out')<CR>"cgp
+    if exists('$VIM_X11_FORWARD')
+        map <silent> <S-Insert> :let @c=system('xclip -out; xterm -e true')<CR>"cgP
+        map <silent> <leader>P :let @c=system('xclip -out; xterm -e true')<CR>"cgP
+        map <silent> <leader>p :let @c=system('xclip -out; xterm -e true')<CR>"cgp
+    else
+        map <silent> <S-Insert> :let @c=system('xclip -out')<CR>"cgP
+        map <silent> <leader>P :let @c=system('xclip -out')<CR>"cgP
+        map <silent> <leader>p :let @c=system('xclip -out')<CR>"cgp
+    endif
 
 endif
 
