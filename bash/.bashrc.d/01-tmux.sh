@@ -1,4 +1,4 @@
-# tmux.bashrc
+# tmux
 
 # launch and attach to tmux session
 if [[ -f /usr/bin/tmux && -z $TMUX ]]; then
