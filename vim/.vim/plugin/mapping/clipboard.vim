@@ -15,13 +15,24 @@ if has("clipboard")
 
 else
     " cut into system clipboard
-    vnoremap <silent> <S-Del> "cx:call system('xclip -in', @c)<CR>
-    vnoremap <silent> <leader>d "cx:call system('xclip -in', @c)<CR>
-    vnoremap <silent> <leader>x "cx:call system('xclip -in', @c)<CR>
+    if exists('$VIM_X11_FORWARD')
+        vnoremap <silent> <S-Del> "cx:call system('xclip -in; xterm -e true', @c)<CR>
+        vnoremap <silent> <leader>d "cx:call system('xclip -in; xterm -e true', @c)<CR>
+        vnoremap <silent> <leader>x "cx:call system('xclip -in; xterm -e true', @c)<CR>
+    else
+        vnoremap <silent> <S-Del> "cx:call system('xclip -in', @c)<CR>
+        vnoremap <silent> <leader>d "cx:call system('xclip -in', @c)<CR>
+        vnoremap <silent> <leader>x "cx:call system('xclip -in', @c)<CR>
+    endif
     
     " copy into system clipboard
-    vnoremap <silent> <C-Insert> "cy:call system('xclip -in', @c)<CR>
-    vnoremap <silent> <leader>y "cy:call system('xclip -in', @c)<CR>
+    if exists('$VIM_X11_FORWARD')
+        vnoremap <silent> <C-Insert> "cy:call system('xclip -in; xterm -e true', @c)<CR>
+        vnoremap <silent> <leader>y "cy:call system('xclip -in; xterm -e true', @c)<CR>
+    else
+        vnoremap <silent> <C-Insert> "cy:call system('xclip -in', @c)<CR>
+        vnoremap <silent> <leader>y "cy:call system('xclip -in', @c)<CR>
+    endif
     
     " paste from system clipboard
     map <silent> <S-Insert> :let @c=system('xclip -out')<CR>"cgP
