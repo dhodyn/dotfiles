@@ -26,10 +26,14 @@ function! LightlineFugitive()
 endfunction
 
 function! LightlineFiletype()
-    return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+    if exists('*WebDevIconsGetFileTypeSymbol')
+        return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+    endif
 endfunction
 
 function! LightlineFileformat()
-    return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+    if exists('*WebDevIconsGetFileFormatSymbol')
+        return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+    endif
 endfunction
 
