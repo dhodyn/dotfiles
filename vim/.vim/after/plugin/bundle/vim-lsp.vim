@@ -23,8 +23,6 @@ function! s:on_lsp_buffer_enabled() abort
     nmap <buffer> [g <plug>(lsp-previous-diagnostic)
     nmap <buffer> ]g <plug>(lsp-next-diagnostic)
     nmap <buffer> <leader>gg <plug>(lsp-status)
-    inoremap <buffer> <expr><C-f> lsp#scroll(+4)
-    inoremap <buffer> <expr><C-d> lsp#scroll(-4)
 
     let g:lsp_format_sync_timeout = 1000
     autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
