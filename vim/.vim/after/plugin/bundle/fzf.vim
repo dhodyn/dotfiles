@@ -1,4 +1,3 @@
-" plugin: fzf
 noremap <silent> <leader>ff <Cmd>Files<CR>
 noremap <silent> <leader>fg <Cmd>GFiles<CR>
 noremap <silent> <leader>fG <Cmd>GFiles?<CR>
