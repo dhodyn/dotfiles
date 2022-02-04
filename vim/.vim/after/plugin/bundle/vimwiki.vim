@@ -3,27 +3,32 @@ let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}
 
 call vimwiki#vars#init()
 
-" add prefix <Leader>w to default mapping
 nmap <Leader>w= <Plug>VimwikiAddHeaderLevel
 nmap <Leader>w- <Plug>VimwikiRemoveHeaderLevel
 nmap <Leader>w+ <Plug>VimwikiNormalizeLink
 vmap <Leader>w+ <Plug>VimwikiNormalizeLinkVisual
 nmap <Leader>w<C-Space> <Plug>VimwikiToggleListItem
+nmap <Leader>w<C-@> <Plug>VimwikiToggleListItem
 nmap <Leader>wgnt <Plug>VimwikiNextTask
 nmap <Leader>wgl<Space> <Plug>VimwikiRemoveSingleCB
 nmap <Leader>wgL<Space> <Plug>VimwikiRemoveCBInList
 nmap <Leader>wgln <Plug>VimwikiIncrementListItem
 vmap <Leader>wgln <Plug>VimwikiIncrementListItem
-nmap <Leader>wglp <Plug>VimwikiIncrementListItem
-vmap <Leader>wglp <Plug>VimwikiIncrementListItem
+nmap <Leader>wglp <Plug>VimwikiDecrementListItem
+vmap <Leader>wglp <Plug>VimwikiDecrementListItem
 nmap <Leader>wgll <Plug>VimwikiIncreaseLvlSingleItem
 nmap <Leader>wgLl <Plug>VimwikiIncreaseLvlWholeItem
+nmap <Leader>wgLL <Plug>VimwikiIncreaseLvlWholeItem
 nmap <Leader>wglh <Plug>VimwikiDecreaseLvlSingleItem
 nmap <Leader>wgLh <Plug>VimwikiDecreaseLvlWholeItem
+nmap <Leader>wgLH <Plug>VimwikiDecreaseLvlWholeItem
 nmap <Leader>wglr <Plug>VimwikiRenumberList
 nmap <Leader>wgLr <Plug>VimwikiRenumberAllLists
+nmap <Leader>wgLR <Plug>VimwikiRenumberAllLists
 nnoremap <Leader>wgl* :VimwikiChangeSymbolTo *<CR>
 nnoremap <Leader>wgL* :VimwikiChangeSymbolInListTo *<CR>
+nnoremap <Leader>wgl+ :VimwikiChangeSymbolTo +<CR>
+nnoremap <Leader>wgL+ :VimwikiChangeSymbolInListTo +<CR>
 nnoremap <Leader>wgl# :VimwikiChangeSymbolTo #<CR>
 nnoremap <Leader>wgL# :VimwikiChangeSymbolInListTo #<CR>
 nnoremap <Leader>wgl- :VimwikiChangeSymbolTo -<CR>
