@@ -20,7 +20,7 @@ augroup vimwiki_local_mappings
     autocmd!
     " headers
     autocmd FileType vimwiki,vimwiki_media,vimwiki_default,vimwiki_markdown,vimwiki_markdown_custom
-    \  nmap <silent><buffer> <leader>w= <Plug>VimwikiAddHeaderLevel
+    \ nmap <silent><buffer> <leader>w= <Plug>VimwikiAddHeaderLevel
     \|nmap <silent><buffer> <leader>w- <Plug>VimwikiRemoveHeaderLevel
     \|nmap <silent><buffer> [[ <Plug>VimwikiGoToPrevHeader
     \|nmap <silent><buffer> ]] <Plug>VimwikiGoToNextHeader
@@ -31,7 +31,7 @@ augroup vimwiki_local_mappings
 
     " table_format
     autocmd FileType vimwiki,vimwiki_media,vimwiki_default,vimwiki_markdown,vimwiki_markdown_custom
-    \  nmap <silent><buffer> <leader>wgqq <Plug>VimwikiTableAlignQ
+    \ nmap <silent><buffer> <leader>wgqq <Plug>VimwikiTableAlignQ
     \|nmap <silent><buffer> <leader>wgww <Plug>VimwikiTableAlignW
     \|nmap <silent><buffer> <leader>wgq1 <Plug>VimwikiTableAlignQ1
     \|nmap <silent><buffer> <leader>wgw1 <Plug>VimwikiTableAlignW1
@@ -40,7 +40,7 @@ augroup vimwiki_local_mappings
 
     " lists
     autocmd FileType vimwiki,vimwiki_media,vimwiki_default,vimwiki_markdown,vimwiki_markdown_custom
-    \  nmap <silent><buffer> <leader>wtl <Plug>VimwikiToggleListItem
+    \ nmap <silent><buffer> <leader>wtl <Plug>VimwikiToggleListItem
     \|nmap <silent><buffer> <leader>wgnt <Plug>VimwikiNextTask
     \|nmap <silent><buffer> <leader>wgl<Space> <Plug>VimwikiRemoveSingleCB
     \|nmap <silent><buffer> <leader>wgL<Space> <Plug>VimwikiRemoveCBInList
