@@ -29,14 +29,14 @@ function! s:on_lsp_buffer_enabled() abort
 
     augroup on_lsp_float_opened
         autocmd!
-        autocmd User lsp_float_opened nmap <buffer> <silent> <esc> <plug>(lsp-preview-close)
+        autocmd User lsp_float_opened nmap <buffer> <silent> <C-c> <plug>(lsp-preview-close)
         autocmd User lsp_float_opened nmap <buffer> <silent> <expr><C-f> lsp#scroll(+4)
         autocmd User lsp_float_opened nmap <buffer> <silent> <expr><C-b> lsp#scroll(-4)
     augroup END
 
     augroup on_lsp_float_closed
         autocmd!
-        autocmd User lsp_float_closed nunmap <buffer> <esc>
+        autocmd User lsp_float_closed nunmap <buffer> <C-c>
         autocmd User lsp_float_closed nunmap <buffer> <C-f>
         autocmd User lsp_float_closed nunmap <buffer> <C-b>
     augroup END
