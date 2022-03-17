@@ -1,8 +1,14 @@
-channel_priority: strict
-envs_dirs:
-  - ~/miniconda3/envs
-pkgs_dirs:
-  - ~/miniconda3/pkgs
 channels:
   - conda-forge
   - defaults
+
+channel_priority: strict
+
+pkgs_dirs:
+  - ~/miniconda3/pkgs
+
+envs_dirs:
+  - ~/miniconda3/envs
+
+conda-build:
+    root-dir: ~/miniconda3/conda-builds
