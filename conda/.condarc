@@ -11,4 +11,4 @@ envs_dirs:
   - ~/miniconda3/envs
 
 conda-build:
-    root-dir: ~/miniconda3/conda-builds
+    root-dir: ~/miniconda3/conda_builds
