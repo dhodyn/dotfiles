@@ -1,5 +1,7 @@
-channels:
+default_channels:
   - conda-forge
+
+channels:
   - defaults
 
 channel_priority: strict
@@ -11,4 +13,6 @@ envs_dirs:
   - ~/miniconda3/envs
 
 conda-build:
-    root-dir: ~/miniconda3/conda_builds
+  root-dir: ~/miniconda3/conda_builds
+
+auto_update_conda: false
