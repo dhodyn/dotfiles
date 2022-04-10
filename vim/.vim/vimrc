@@ -20,7 +20,6 @@ packadd! vim-repeat
 packadd! vim-restructuredtext
 packadd! vim-surround
 packadd! vim-unimpaired
-packadd! vimwiki
 
 packadd! lightline.vim
 packadd! vim-devicons
