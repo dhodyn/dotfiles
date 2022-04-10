@@ -46,6 +46,3 @@
 [submodule "vim/.vim/pack/bundle/opt/vim-devicons"]
 	path = vim/.vim/pack/bundle/opt/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
-[submodule "vim/.vim/pack/bundle/opt/vimwiki"]
-	path = vim/.vim/pack/bundle/opt/vimwiki
-	url = https://github.com/vimwiki/vimwiki.git
