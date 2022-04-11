@@ -1,3 +1,7 @@
+if &runtimepath !~ 'lightline.vim'
+    finish
+endif
+
 set noshowmode
 
 let g:lightline = {

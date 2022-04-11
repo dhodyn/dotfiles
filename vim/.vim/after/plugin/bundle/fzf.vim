@@ -1,3 +1,7 @@
+if &runtimepath !~ 'fzf.vim'
+    finish
+endif
+
 noremap <silent> <leader>ff <Cmd>Files<CR>
 noremap <silent> <leader>fg <Cmd>GFiles<CR>
 noremap <silent> <leader>fG <Cmd>GFiles?<CR>
