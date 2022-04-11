@@ -1,3 +1,7 @@
+if &runtimepath !~ 'vim-lsp'
+    finish
+endif
+
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
     setlocal tagfunc=lsp#tagfunc 
