@@ -1,9 +1,6 @@
 [submodule "vim/dot-vim/pack/bundle/opt/fzf.vim"]
 	path = vim/.vim/pack/bundle/opt/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
-[submodule "vim/dot-vim/pack/bundle/opt/vim-restructuredtext"]
-	path = vim/.vim/pack/bundle/opt/vim-restructuredtext
-	url = https://github.com/marshallward/vim-restructuredtext
 [submodule "vim/dot-vim/pack/bundle/opt/lightline.vim"]
 	path = vim/.vim/pack/bundle/opt/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
