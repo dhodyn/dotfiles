@@ -17,6 +17,7 @@ packadd! vim-fugitive
 packadd! vim-lsp
 packadd! vim-lsp-settings
 packadd! vim-repeat
+packadd! vim-sleuth
 packadd! vim-surround
 packadd! vim-unimpaired
 packadd! wiki.vim
