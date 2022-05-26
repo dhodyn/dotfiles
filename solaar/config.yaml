@@ -1,0 +1,50 @@
+- 1.1.3
+- _NAME: Marathon Mouse M705 (M-R0073)
+  _absent: [hi-res-scroll, lowres-smooth-scroll, hires-smooth-resolution, smart-shift, thumb-scroll-mode, thumb-scroll-invert, onboard_profiles, report_rate,
+    dpi, dpi-sliding, speed-change, mouse-gestures, backlight, backlight-timed, fn-swap, reprogrammable-keys, persistent-remappable-keys, divert-keys, disable-keyboard-keys,
+    divert-crown, crown-smooth, divert-gkeys, m-key-leds, mr-key-led, multiplatform, change-host, gesture2-gestures, gesture2-divert, gesture2-params, lowres-scroll-mode]
+  _modelId: 406D00000000
+  _serial: 9BCEBEAF
+  _unitId: 45FBB6E6
+  _wpid: 406D
+  divert-keys: {82: 0, 83: 0, 86: 0, 91: 0, 93: 0}
+  hires-scroll-mode: false
+  hires-smooth-invert: false
+  hires-smooth-resolution: true
+  pointer_speed: 256
+  reprogrammable-keys: {80: 80, 81: 81, 82: 82, 83: 83, 86: 86, 91: 91, 93: 93}
+- _NAME: MX Keys Keyboard
+  _absent: [hi-res-scroll, lowres-smooth-scroll, hires-smooth-invert, hires-smooth-resolution, smart-shift, thumb-scroll-mode, thumb-scroll-invert, onboard_profiles,
+    report_rate, pointer_speed, dpi, dpi-sliding, speed-change, mouse-gestures, backlight-timed, reprogrammable-keys, persistent-remappable-keys, divert-crown,
+    crown-smooth, divert-gkeys, m-key-leds, mr-key-led, gesture2-gestures, gesture2-divert, gesture2-params, lowres-scroll-mode, hires-scroll-mode]
+  _modelId: B35B408A0000
+  _sensitive: {backlight: true, change-host: false, disable-keyboard-keys: false, divert-keys: true, multiplatform: false}
+  _serial: F7A43152
+  _unitId: F7A43152
+  _wpid: 408A
+  backlight: true
+  disable-keyboard-keys: {1: false, 2: false, 4: false, 8: false, 16: false}
+  divert-keys: {10: 0, 110: 0, 111: 0, 191: 0, 199: 1, 200: 1, 209: 0, 210: 0, 211: 0, 224: 0, 225: 0, 226: 0, 227: 0, 228: 0, 229: 0, 230: 0, 231: 0, 232: 0,
+    233: 0, 234: 0, 235: 0, 236: 0}
+  fn-swap: true
+  multiplatform: 0
+- _NAME: MX Master 3 Wireless Mouse
+  _absent: [hi-res-scroll, lowres-scroll-mode, onboard_profiles, report_rate, pointer_speed, speed-change, backlight, backlight-timed, fn-swap, persistent-remappable-keys,
+    disable-keyboard-keys, divert-crown, crown-smooth, divert-gkeys, m-key-leds, mr-key-led, multiplatform, gesture2-gestures, gesture2-divert, gesture2-params]
+  _dpi-sliding: 14
+  _modelId: B02340820000
+  _sensitive: {dpi-sliding: false, mouse-gestures: true, reprogrammable-keys: false}
+  _serial: A6E71883
+  _unitId: A6E71883
+  _wpid: '4082'
+  divert-keys: {82: 0, 83: 0, 86: 0, 195: 1, 196: 0}
+  dpi: 1000
+  dpi-sliding: 0
+  hires-scroll-mode: false
+  hires-smooth-invert: false
+  hires-smooth-resolution: true
+  mouse-gestures: 195
+  reprogrammable-keys: {80: 80, 81: 81, 82: 82, 83: 83, 86: 86, 195: 195, 196: 196}
+  smart-shift: 10
+  thumb-scroll-invert: false
+  thumb-scroll-mode: false
