@@ -14,5 +14,5 @@
   - KeyPress: [Super_L, A]
 - Rule:
   - MouseGesture: Mouse Down
-  - KeyPress: [Super_L, D]
+  - KeyPress: [Super_L, V]
 ...

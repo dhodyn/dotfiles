@@ -7,7 +7,7 @@ function toolbox() {
         key="$1"
         case $key in
             enter)
-                TOOLBOX_CONTAINER_NAME="${2-fedora-toolbox-35}"
+                TOOLBOX_CONTAINER_NAME="${2-fedora-toolbox-36}"
                 shift;;
             -c|--container)
                 TOOLBOX_CONTAINER_NAME="$2"
