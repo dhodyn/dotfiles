@@ -1,5 +1,9 @@
 %YAML 1.3
 ---
+- Key: [Mission Control/Task View, pressed]
+- KeyPress: [Super_L, S]
+...
+---
 - Rule:
   - MouseGesture: []
   - KeyPress: [Super_L, S]
