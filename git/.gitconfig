@@ -14,8 +14,6 @@
 	tool = vimdiff
 [mergetool]
 	prompt = false
-[pull]
-	rebase = false
 [credential]
 	helper = store
 [init]
