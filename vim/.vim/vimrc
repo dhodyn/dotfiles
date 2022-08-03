@@ -11,6 +11,7 @@ packadd! asyncomplete.vim
 packadd! fzf
 packadd! fzf.vim
 packadd! gruvbox
+packadd! lists.vim
 packadd! vim-commentary
 packadd! vim-dirvish
 packadd! vim-fugitive
@@ -20,6 +21,7 @@ packadd! vim-repeat
 packadd! vim-sleuth
 packadd! vim-surround
 packadd! vim-unimpaired
+packadd! wiki-ft.vim
 packadd! wiki.vim
 
 packadd! lightline.vim
