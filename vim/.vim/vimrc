@@ -20,8 +20,8 @@ packadd! vim-repeat
 packadd! vim-sleuth
 packadd! vim-surround
 packadd! vim-unimpaired
-packadd! wiki-ft.vim
 packadd! wiki.vim
+packadd! wiki-ft.vim
 
 packadd! lightline.vim
 packadd! vim-devicons
