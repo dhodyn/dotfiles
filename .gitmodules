@@ -43,12 +43,6 @@
 [submodule "vim/.vim/pack/bundle/opt/vim-devicons"]
 	path = vim/.vim/pack/bundle/opt/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
-[submodule "vim/.vim/pack/bundle/opt/wiki.vim"]
-	path = vim/.vim/pack/bundle/opt/wiki.vim
-	url = https://github.com/lervag/wiki.vim.git
 [submodule "vim/.vim/pack/bundle/opt/vim-sleuth"]
 	path = vim/.vim/pack/bundle/opt/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth
-[submodule "vim/.vim/pack/bundle/opt/wiki-ft.vim"]
-	path = vim/.vim/pack/bundle/start/wiki-ft.vim
-	url = https://github.com/lervag/wiki-ft.vim.git
