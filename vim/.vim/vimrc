@@ -21,6 +21,7 @@ packadd! vim-sleuth
 packadd! vim-surround
 packadd! vim-unimpaired
 packadd! wiki.vim
+packadd! lists.vim
 packadd! wiki-ft.vim
 
 packadd! lightline.vim

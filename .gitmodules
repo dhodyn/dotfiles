@@ -52,3 +52,6 @@
 [submodule "vim/.vim/pack/bundle/opt/wiki-ft.vim"]
 	path = vim/.vim/pack/bundle/start/wiki-ft.vim
 	url = https://github.com/lervag/wiki-ft.vim.git
+[submodule "vim/.vim/pack/bundle/opt/lists.vim"]
+	path = vim/.vim/pack/bundle/opt/lists.vim
+	url = https://github.com/lervag/lists.vim.git
