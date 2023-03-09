@@ -15,5 +15,6 @@ augroup wiki
     autocmd FileType wiki WikiEnable
     autocmd FileType wiki setlocal foldlevel=99
     autocmd FileType wiki setlocal spell
+    autocmd FileType wiki setlocal wrap
 augroup END
 
