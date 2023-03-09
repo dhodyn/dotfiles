@@ -55,3 +55,6 @@
 [submodule "vim/.vim/pack/bundle/opt/lists.vim"]
 	path = vim/.vim/pack/bundle/opt/lists.vim
 	url = https://github.com/lervag/lists.vim.git
+[submodule "vim/.vim/pack/bundle/opt/vim-abolish"]
+	path = vim/.vim/pack/bundle/opt/vim-abolish
+	url = https://github.com/tpope/vim-abolish.git

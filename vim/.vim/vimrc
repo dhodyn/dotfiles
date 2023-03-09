@@ -11,6 +11,7 @@ packadd! asyncomplete.vim
 packadd! fzf
 packadd! fzf.vim
 packadd! gruvbox
+packadd! vim-abolish
 packadd! vim-commentary
 packadd! vim-dirvish
 packadd! vim-fugitive
