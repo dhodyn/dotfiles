@@ -1,5 +1,9 @@
 # starship
 
+if ! (command -v starship); then
+	return
+fi
+
 eval "$(starship init bash)"
 
 function set_win_title(){
