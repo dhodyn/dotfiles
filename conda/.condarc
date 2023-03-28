@@ -1,3 +1,5 @@
+#channel_alias: http://localhost:8000
+
 default_channels:
   - conda-forge
 
@@ -5,14 +7,15 @@ channels:
   - defaults
 
 channel_priority: strict
+auto_update_conda: false
+notify_outdated_conda: false
 
 pkgs_dirs:
-  - ~/miniconda3/pkgs
+  - ~/.miniforge3/pkgs
 
 envs_dirs:
-  - ~/miniconda3/envs
+  - ~/.miniforge3/envs
 
 conda-build:
-  root-dir: ~/miniconda3/conda_builds
+  root-dir: ~/.miniforge3/conda_builds
 
-auto_update_conda: false

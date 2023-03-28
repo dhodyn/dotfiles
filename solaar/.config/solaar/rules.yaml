@@ -1,22 +1,34 @@
 %YAML 1.3
 ---
 - Key: [Mission Control/Task View, pressed]
-- KeyPress: [Super_L, S]
+- KeyPress:
+  - Super_L
+  - click
 ...
 ---
 - Rule:
   - MouseGesture: []
-  - KeyPress: [Super_L, S]
+  - KeyPress:
+    - Super_L
+    - click
 - Rule:
   - MouseGesture: Mouse Left
-  - KeyPress: [Super_L, Page_Down]
+  - KeyPress:
+    - [Super_L, Page_Down]
+    - click
 - Rule:
   - MouseGesture: Mouse Right
-  - KeyPress: [Super_L, Page_Up]
+  - KeyPress:
+    - [Super_L, Page_Up]
+    - click
 - Rule:
   - MouseGesture: Mouse Up
-  - KeyPress: [Super_L, A]
+  - KeyPress:
+    - [Super_L, A]
+    - click
 - Rule:
   - MouseGesture: Mouse Down
-  - KeyPress: [Super_L, D]
+  - KeyPress:
+    - [Super_L, D]
+    - click
 ...
