@@ -1,6 +1,6 @@
 # starship
 
-if ! (command -v starship); then
+if [[ ! -x /usr/local/bin/starship ]]; then
 	return
 fi
 
