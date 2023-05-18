@@ -11,11 +11,11 @@ auto_update_conda: false
 notify_outdated_conda: false
 
 pkgs_dirs:
-  - ~/.miniforge3/pkgs
+  - ~/.local/share/miniforge3/pkgs
 
 envs_dirs:
-  - ~/.miniforge3/envs
+  - ~/.local/share/miniforge3/envs
 
 conda-build:
-  root-dir: ~/.miniforge3/conda_builds
+  root-dir: ~/.local/share/miniforge3/conda_builds
 
