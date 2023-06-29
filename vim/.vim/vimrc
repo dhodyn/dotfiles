@@ -1,33 +1,30 @@
 " vimrc
 
-" Packages
+" Default Packages
 runtime ftplugin/man.vim
-
 packadd! matchit
 packadd! justify
 
-packadd! asyncomplete-lsp.vim
-packadd! asyncomplete.vim
-packadd! fzf
-packadd! fzf.vim
-packadd! gruvbox
-packadd! vim-abolish
-packadd! vim-commentary
-packadd! vim-dirvish
-packadd! vim-fugitive
-packadd! vim-lsp
-packadd! vim-lsp-settings
-packadd! vim-repeat
-packadd! vim-sleuth
-packadd! vim-surround
-packadd! vim-unimpaired
-packadd! wiki.vim
-packadd! lists.vim
-packadd! wiki-ft.vim
+" junegunn/vim-plug
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.local/share/vim/plugged')
 
-packadd! lightline.vim
-packadd! vim-devicons
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
+Plug 'justinmk/vim-dirvish'
+Plug 'tpope/vim-fugitive'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'itchyny/lightline.vim'
+Plug 'ryanoasis/vim-devicons'
 
-" auto filetype detection
-filetype plugin indent on
+call plug#end()
 
