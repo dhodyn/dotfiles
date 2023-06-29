@@ -1,6 +1,6 @@
 " vimrc
 
-" Default Packages
+" Packages
 runtime ftplugin/man.vim
 packadd! matchit
 packadd! justify
@@ -8,21 +8,22 @@ packadd! justify
 " junegunn/vim-plug
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.local/share/vim/plugged')
 
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'justinmk/vim-dirvish'
+Plug 'mattn/vim-lsp-settings'
 Plug 'morhetz/gruvbox'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/vim-lsp'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
-Plug 'justinmk/vim-dirvish'
 Plug 'tpope/vim-fugitive'
-Plug 'prabirshrestha/vim-lsp'
-Plug 'mattn/vim-lsp-settings'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
+
 Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 
