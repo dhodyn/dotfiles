@@ -6,7 +6,7 @@ packadd! matchit
 packadd! justify
 
 " junegunn/vim-plug
-call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.local/share/vim/plugged')
+call plug#begin(has('nvim') ? stdpath('data') . '/vim-plug' : '~/.local/share/vim/vim-plug')
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
