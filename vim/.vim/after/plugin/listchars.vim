@@ -1,4 +1,4 @@
 if (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
-    set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:~,trail:·,eol:¬
+    set listchars=tab:»\ ,trail:·,nbsp:+,eol:¬,extends:›,precedes:‹
 endif
 
