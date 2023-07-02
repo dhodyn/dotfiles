@@ -39,6 +39,9 @@ set linebreak
 " preserve indentation in wrapped text
 set breakindent
 
+" string to put before wrapped screen lines
+let &showbreak='\ '
+
 " minimal number of columns to scroll horizontally
 set sidescroll=1
 
