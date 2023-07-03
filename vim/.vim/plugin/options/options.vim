@@ -96,6 +96,11 @@ set hidden
 " "useopen" and/or "split"; which window to use when jumping to a buffer
 set switchbuf=uselast
 
+" a new window is put below the current one
+set splitbelow
+
+" a new window is put right of the current one
+set splitright
 
 " 7 multiple tab pages
 
