@@ -164,8 +164,8 @@ if has("persistent_undo")
         silent call mkdir($HOME . '/.local/state/vim/undo', 'p')
         set undodir=~/.local/state/vim/undo//,.,~/tmp,/var/tmp,/tmp
     elseif has("win32") && !has("unix")
-        silent call mkdir($HOME . '/local/state/vim/undo', 'p')
-        set undodir=~/local/state/vim/undo//,.,$TEMP,c:/tmp,c:/temp
+        silent call mkdir($HOME . '/_local/state/vim/undo', 'p')
+        set undodir=~/_local/state/vim/undo//,.,$TEMP,c:/tmp,c:/temp
     endif
 
 endif
@@ -241,8 +241,8 @@ if has("unix")
     silent call mkdir($HOME . '/.local/state/vim/backup', 'p')
     set backupdir=~/.local/state/vim/backup//,.,~/tmp,/var/tmp,/tmp
 elseif has("win32") && !has("unix")
-    silent call mkdir($HOME . '/local/state/vim/backup', 'p')
-    set backupdir=~/local/state/vim/backup//,.,$TEMP,c:/tmp,c:/temp
+    silent call mkdir($HOME . '/_local/state/vim/backup', 'p')
+    set backupdir=~/_local/state/vim/backup//,.,$TEMP,c:/tmp,c:/temp
 endif
 
 " automatically read a file when it was modified outside of Vim
@@ -259,8 +259,8 @@ if has("unix")
     silent call mkdir($HOME . '/.local/state/vim/swap', 'p')
     set directory=~/.local/state/vim/swap//,.,~/tmp,/var/tmp,/tmp
 elseif has("win32") && !has("unix")
-    silent call mkdir($HOME . '/local/state/vim/swap', 'p')
-    set directory=~/local/state/vim/swap//,.,$TEMP,c:/tmp,c:/temp
+    silent call mkdir($HOME . '/_local/state/vim/swap', 'p')
+    set directory=~/_local/state/vim/swap//,.,$TEMP,c:/tmp,c:/temp
 endif
 
 
@@ -325,8 +325,8 @@ if has("unix")
     silent call mkdir($HOME . '/.local/state/vim/view', 'p')
     set viewdir=~/.local/state/vim/view//,.,~/tmp,/var/tmp,/tmp
 elseif has("win32") && !has("unix")
-    silent call mkdir($HOME . '/local/state/vim/view', 'p')
-    set viewdir=~/local/state/vim/view//,.,$TEMP,c:/tmp,c:/temp
+    silent call mkdir($HOME . '/_local/state/vim/view', 'p')
+    set viewdir=~/_local/state/vim/view//,.,$TEMP,c:/tmp,c:/temp
 endif
 
 " list that specifies what to write in the viminfo file
@@ -337,6 +337,6 @@ if has("unix")
     silent call mkdir($HOME . '/.local/state/vim/viminfo', 'p')
     set viminfofile=~/.local/state/vim/viminfo//,.,~/tmp,/var/tmp,/tmp
 elseif has("win32") && !has("unix")
-    silent call mkdir($HOME . '/local/state/vim/viminfo', 'p')
-    set viminfofile=~/local/state/vim/viminfo//,.,$TEMP,c:/tmp,c:/temp
+    silent call mkdir($HOME . '/_local/state/vim/viminfo', 'p')
+    set viminfofile=~/_local/state/vim/viminfo//,.,$TEMP,c:/tmp,c:/temp
 endif
