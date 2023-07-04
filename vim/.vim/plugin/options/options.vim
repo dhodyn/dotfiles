@@ -161,8 +161,10 @@ if has("persistent_undo")
 
     " list of directories for undo files
     if has("unix")
+        silent call mkdir($HOME . '/.local/state/vim/undo', 'p')
         set undodir=~/.local/state/vim/undo//,.,~/tmp,/var/tmp,/tmp
     elseif has("win32") && !has("unix")
+        silent call mkdir($HOME . '/local/state/vim/undo', 'p')
         set undodir=~/local/state/vim/undo//,.,$TEMP,c:/tmp,c:/temp
     endif
 
@@ -236,8 +238,10 @@ set backupcopy=auto
 
 " list of directories to put backup files in
 if has("unix")
+    silent call mkdir($HOME . '/.local/state/vim/backup', 'p')
     set backupdir=~/.local/state/vim/backup//,.,~/tmp,/var/tmp,/tmp
 elseif has("win32") && !has("unix")
+    silent call mkdir($HOME . '/local/state/vim/backup', 'p')
     set backupdir=~/local/state/vim/backup//,.,$TEMP,c:/tmp,c:/temp
 endif
 
@@ -252,8 +256,10 @@ set nofsync
 
 " list of directories for the swap file
 if has("unix")
+    silent call mkdir($HOME . '/.local/state/vim/swap', 'p')
     set directory=~/.local/state/vim/swap//,.,~/tmp,/var/tmp,/tmp
 elseif has("win32") && !has("unix")
+    silent call mkdir($HOME . '/local/state/vim/swap', 'p')
     set directory=~/local/state/vim/swap//,.,$TEMP,c:/tmp,c:/temp
 endif
 
@@ -316,8 +322,10 @@ set loadplugins
 
 " directory where to store files with :mkview
 if has("unix")
+    silent call mkdir($HOME . '/.local/state/vim/view', 'p')
     set viewdir=~/.local/state/vim/view//,.,~/tmp,/var/tmp,/tmp
 elseif has("win32") && !has("unix")
+    silent call mkdir($HOME . '/local/state/vim/view', 'p')
     set viewdir=~/local/state/vim/view//,.,$TEMP,c:/tmp,c:/temp
 endif
 
@@ -326,7 +334,9 @@ set viminfo=!,'100,<50,s10,h
 
 " filename used for viminfo file
 if has("unix")
+    silent call mkdir($HOME . '/.local/state/vim/viminfo', 'p')
     set viminfofile=~/.local/state/vim/viminfo//,.,~/tmp,/var/tmp,/tmp
 elseif has("win32") && !has("unix")
+    silent call mkdir($HOME . '/local/state/vim/viminfo', 'p')
     set viminfofile=~/local/state/vim/viminfo//,.,$TEMP,c:/tmp,c:/temp
 endif
