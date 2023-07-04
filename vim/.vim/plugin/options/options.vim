@@ -324,3 +324,9 @@ endif
 " list that specifies what to write in the viminfo file
 set viminfo=!,'100,<50,s10,h
 
+" filename used for viminfo file
+if has("unix")
+    set viminfofile=~/.cache/vim/viminfo//,~/.local/share/vim/viminfo//,~/.vim/viminfo//,.,~/tmp,/var/tmp,/tmp
+elseif has("win32") && !has("unix")
+    set viminfofile=~/cache/vim/viminfo//,~/local/share/vim/viminfo//,~/vimfiles/viminfo//,.,$TEMP,c:/tmp,c:/temp
+endif
