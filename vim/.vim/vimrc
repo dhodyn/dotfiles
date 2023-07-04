@@ -29,3 +29,5 @@ Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
+" auto filetype detection
+filetype plugin indent on
