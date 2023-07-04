@@ -161,9 +161,9 @@ if has("persistent_undo")
 
     " list of directories for undo files
     if has("unix")
-        set undodir=~/.cache/vim/undo//,~/.local/share/vim/undo//,~/.vim/undo//,.,~/tmp,/var/tmp,/tmp
+        set undodir=~/.local/state/vim/undo//,.,~/tmp,/var/tmp,/tmp
     elseif has("win32") && !has("unix")
-        set undodir=~/cache/vim/undo//,~/local/share/vim/undo//,~/vimfiles/undo//,.,$TEMP,c:/tmp,c:/temp
+        set undodir=~/local/state/vim/undo//,.,$TEMP,c:/tmp,c:/temp
     endif
 
 endif
@@ -236,9 +236,9 @@ set backupcopy=auto
 
 " list of directories to put backup files in
 if has("unix")
-    set backupdir=~/.cache/vim/backup//,~/.local/share/vim/backup//,~/.vim/backup//,.,~/tmp,/var/tmp,/tmp
+    set backupdir=~/.local/state/vim/backup//,.,~/tmp,/var/tmp,/tmp
 elseif has("win32") && !has("unix")
-    set backupdir=~/cache/vim/backup//,~/local/share/vim/backup//,~/vimfiles/backup//,.,$TEMP,c:/tmp,c:/temp
+    set backupdir=~/local/state/vim/backup//,.,$TEMP,c:/tmp,c:/temp
 endif
 
 " automatically read a file when it was modified outside of Vim
@@ -252,9 +252,9 @@ set nofsync
 
 " list of directories for the swap file
 if has("unix")
-    set directory=~/.cache/vim/swap//,~/.local/share/vim/swap//,~/.vim/swap//,.,~/tmp,/var/tmp,/tmp
+    set directory=~/.local/state/vim/swap//,.,~/tmp,/var/tmp,/tmp
 elseif has("win32") && !has("unix")
-    set directory=~/cache/vim/swap//,~/local/share/vim/swap//,~/vimfiles/swap//,.,$TEMP,c:/tmp,c:/temp
+    set directory=~/local/state/vim/swap//,.,$TEMP,c:/tmp,c:/temp
 endif
 
 
@@ -316,9 +316,9 @@ set loadplugins
 
 " directory where to store files with :mkview
 if has("unix")
-    set viewdir=~/.cache/vim/view//,~/.local/share/vim/view//,~/.vim/view//,.,~/tmp,/var/tmp,/tmp
+    set viewdir=~/.local/state/vim/view//,.,~/tmp,/var/tmp,/tmp
 elseif has("win32") && !has("unix")
-    set viewdir=~/cache/vim/view//,~/local/share/vim/view//,~/vimfiles/view//,.,$TEMP,c:/tmp,c:/temp
+    set viewdir=~/local/state/vim/view//,.,$TEMP,c:/tmp,c:/temp
 endif
 
 " list that specifies what to write in the viminfo file
@@ -326,7 +326,7 @@ set viminfo=!,'100,<50,s10,h
 
 " filename used for viminfo file
 if has("unix")
-    set viminfofile=~/.cache/vim/viminfo//,~/.local/share/vim/viminfo//,~/.vim/viminfo//,.,~/tmp,/var/tmp,/tmp
+    set viminfofile=~/.local/state/vim/viminfo//,.,~/tmp,/var/tmp,/tmp
 elseif has("win32") && !has("unix")
-    set viminfofile=~/cache/vim/viminfo//,~/local/share/vim/viminfo//,~/vimfiles/viminfo//,.,$TEMP,c:/tmp,c:/temp
+    set viminfofile=~/local/state/vim/viminfo//,.,$TEMP,c:/tmp,c:/temp
 endif
