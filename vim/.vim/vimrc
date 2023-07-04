@@ -1,6 +1,6 @@
 " vimrc
 
-" Packages
+" vim-packages
 runtime ftplugin/man.vim
 packadd! matchit
 packadd! justify
