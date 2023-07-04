@@ -155,19 +155,16 @@ set belloff=all
 
 " 13 editing text
 
-if has("persistent_undo")
-    " automatically save and restore undo history
-    set undofile
+" automatically save and restore undo history
+set undofile
 
-    " list of directories for undo files
-    if has("unix")
-        silent call mkdir($HOME . '/.local/state/vim/undo', 'p')
-        set undodir=~/.local/state/vim/undo//,.,~/tmp,/var/tmp,/tmp
-    elseif has("win32") && !has("unix")
-        silent call mkdir($HOME . '/_local/state/vim/undo', 'p')
-        set undodir=~/_local/state/vim/undo//,.,$TEMP,c:/tmp,c:/temp
-    endif
-
+" list of directories for undo files
+if has("unix")
+    silent call mkdir($HOME . '/.local/state/vim/undo', 'p')
+    set undodir=~/.local/state/vim/undo//,.,~/tmp,/var/tmp,/tmp
+elseif has("win32") && !has("unix")
+    silent call mkdir($HOME . '/_local/state/vim/undo', 'p')
+    set undodir=~/_local/state/vim/undo//,.,$TEMP,c:/tmp,c:/temp
 endif
 
 " specifies what <BS>, CTRL-W, etc. can do in Insert mode
