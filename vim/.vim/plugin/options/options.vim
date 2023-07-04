@@ -321,7 +321,6 @@ elseif has("win32") && !has("unix")
     set viewdir=~/cache/vim/view//,~/local/share/vim/view//,~/vimfiles/view//,.,$TEMP,c:/tmp,c:/temp
 endif
 
-
 " list that specifies what to write in the viminfo file
-set vi=!,'100,<50,s10,h
+set viminfo=!,'100,<50,s10,h
 
