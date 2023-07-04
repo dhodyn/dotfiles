@@ -31,7 +31,7 @@ set tagrelative
 " 4 displaying text
 
 " number of screen lines to show around the cursor
-set scrolloff=0
+set scrolloff=4
 
 " wrap long lines at a character in 'breakat'
 set linebreak 
@@ -44,6 +44,9 @@ let &showbreak='\ '
 
 " minimal number of columns to scroll horizontally
 set sidescroll=1
+
+" minimal number of columns to keep left and right of the cursor
+set sidescrolloff=8
 
 " include "lastline" to show the last line even if it doesn't fit
 set display=lastline
