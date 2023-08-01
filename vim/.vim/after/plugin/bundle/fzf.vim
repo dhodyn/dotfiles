@@ -20,7 +20,7 @@ noremap <silent> <leader>f: <Cmd>History:<CR>
 noremap <silent> <leader>fs <Cmd>History/<CR>
 noremap <silent> <leader>fo <Cmd>Commits<CR>
 noremap <silent> <leader>fO <Cmd>BCommits<CR>
-noremap <silent> <leader>fk <Cmd>Commands<CR>
+noremap <silent> <leader>fp <Cmd>Commands<CR>
 noremap <silent> <leader>fM <Cmd>Maps<CR>
 noremap <silent> <leader>fh <Cmd>Helptags<CR>
 noremap <silent> <leader>ft <Cmd>Filetypes<CR>
