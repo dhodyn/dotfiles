@@ -40,7 +40,7 @@ set linebreak
 set breakindent
 
 " string to put before wrapped screen lines
-let &showbreak='\ '
+" let &showbreak='\ '
 
 " minimal number of columns to scroll horizontally
 set sidescroll=1
