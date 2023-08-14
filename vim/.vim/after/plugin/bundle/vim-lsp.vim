@@ -5,6 +5,7 @@ endif
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
     setlocal tagfunc=lsp#tagfunc 
+    setlocal signcolumn=yes
 
     nmap <buffer> <leader>ga <plug>(lsp-code-action)
     nmap <buffer> <leader>gl <plug>(lsp-code-lens)
