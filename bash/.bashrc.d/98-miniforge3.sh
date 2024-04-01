@@ -1,4 +1,4 @@
-# miniconda3
+# miniforge3
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -15,4 +15,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-conda activate dev
+conda activate devel
