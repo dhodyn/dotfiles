@@ -1,8 +1,4 @@
-# starship
-
-if [[ ! -x /usr/local/bin/starship ]]; then
-	return
-fi
+[[ ! $(command -v starship) ]] && return
 
 eval "$(starship init bash)"
 
