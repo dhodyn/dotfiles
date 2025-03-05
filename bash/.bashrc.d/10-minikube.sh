@@ -1,4 +1,0 @@
-# minikube
-
-. <(minikube completion bash)
-
