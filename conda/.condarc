@@ -1,5 +1,3 @@
-#channel_alias: http://localhost:8000
-
 default_channels:
   - conda-forge
 
@@ -18,4 +16,6 @@ envs_dirs:
 
 conda-build:
   root-dir: ~/.local/share/miniforge3/conda_builds
+
+auto_activate_base: false
 
