@@ -1,2 +1,5 @@
 brew "gcc"
+brew "fzf"
 brew "sesh"
+brew "bat"
+brew "eza"
