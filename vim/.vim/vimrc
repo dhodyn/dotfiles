@@ -1,5 +1,8 @@
 " vimrc
 
+let mapleader = " "
+" let maplocalleader = "\\"
+
 " vim-packages
 runtime ftplugin/man.vim
 packadd! matchit
@@ -8,6 +11,9 @@ packadd! justify
 " junegunn/vim-plug
 call plug#begin(has('nvim') ? stdpath('data') . '/vim-plug' : '~/.local/share/vim/vim-plug')
 
+" Plug 'godlygeek/tabular'
+" Plug 'preservim/markdown'
+Plug 'github/copilot.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
