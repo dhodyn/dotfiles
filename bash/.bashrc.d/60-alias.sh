@@ -3,4 +3,5 @@ alias l='ls'
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -I'
-
+alias nvim-lazyvim='NVIM_APPNAME=nvim-lazyvim nvim'
+alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
