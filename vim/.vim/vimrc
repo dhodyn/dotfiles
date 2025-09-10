@@ -11,9 +11,8 @@ packadd! justify
 " junegunn/vim-plug
 call plug#begin(has('nvim') ? stdpath('data') . '/vim-plug' : '~/.local/share/vim/vim-plug')
 
-" Plug 'godlygeek/tabular'
-" Plug 'preservim/vim-markdown'
 Plug 'github/copilot.vim'
+" Plug 'godlygeek/tabular'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -26,6 +25,7 @@ Plug 'prabirshrestha/asyncomplete-file.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/vim-lsp'
+" Plug 'preservim/vim-markdown'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-characterize'
 Plug 'tpope/vim-commentary'

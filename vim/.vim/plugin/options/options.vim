@@ -340,3 +340,6 @@ elseif has("win32") && !has("unix")
     silent call mkdir($HOME . '/_local/state/vim/viminfo', 'p')
     set viminfofile=~/_local/state/vim/viminfo//,.,$TEMP,c:/tmp,c:/temp
 endif
+
+" whether to show the signcolumn
+set signcolumn=yes
