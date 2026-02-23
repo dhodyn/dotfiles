@@ -17,7 +17,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'justinmk/vim-dirvish'
-Plug 'lervag/wiki.vim'
+" Plug 'lervag/wiki.vim'
 Plug 'mattn/vim-lsp-settings'
 Plug 'morhetz/gruvbox'
 Plug 'prabirshrestha/asyncomplete-buffer.vim'

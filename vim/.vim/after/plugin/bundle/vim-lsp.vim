@@ -31,7 +31,7 @@ function! s:on_lsp_buffer_enabled() abort
     nmap <buffer> grg <plug>(lsp-status)
 
     let g:lsp_format_sync_timeout = 1000
-    autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
+    autocmd! BufWritePre *.rs,*.go,*.py call execute('LspDocumentFormatSync')
 
     augroup on_lsp_float_opened
         autocmd!
@@ -55,8 +55,13 @@ augroup lsp_install
 augroup END
 
 let g:lsp_preview_doubletap = [function('lsp#ui#vim#output#closepreview')]
-let g:lsp_diagnostics_echo_cursor = 1
-let g:lsp_diagnostics_virtual_text_enabled = 0
+let g:lsp_diagnostics_echo_cursor = 0
+let g:lsp_diagnostics_float_cursor = 0
+let g:lsp_diagnostics_float_insert_mode_enabled = 0
+let g:lsp_diagnostics_virtual_text_enabled = 1
+let g:lsp_diagnostics_virtual_text_insert_mode_enabled = 0
+let g:lsp_diagnostics_virtual_text_prefix = "> "
+let g:lsp_diagnostics_virtual_text_align = "below"
 let g:lsp_diagnostics_highlights_enabled = 0
 let g:lsp_diagnostics_signs_insert_mode_enabled = 0
 
@@ -66,5 +71,6 @@ if (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
     let g:lsp_diagnostics_signs_information = {'text': '❯'}
     let g:lsp_diagnostics_signs_hint = {'text': '⚙'}
     let g:lsp_document_code_action_signs_hint = {'text': '☇'}
+    let g:lsp_diagnostics_virtual_text_prefix = " ‣ "
 endif
 
