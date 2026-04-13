@@ -25,3 +25,5 @@ brew "vim"
 brew "xclip"
 brew "yarn"
 brew "zoxide"
+
+cask "claude-code"
