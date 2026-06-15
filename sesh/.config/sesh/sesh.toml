@@ -1,0 +1,55 @@
+#:schema https://github.com/joshmedeski/sesh/raw/main/sesh.schema.json
+
+[default_session]
+startup_command = "vim -c :Files"
+preview_command = "eza --all --git --icons --color=always --tree {}"
+
+[[session]]
+name = "main"
+path = "~"
+startup_command = "clear"
+preview_command = "eza --all --git --icons --color=always --tree --level=1 {}"
+
+[[session]]
+name = "bash-config"
+path = "~/dotfiles/bash"
+
+[[session]]
+name = "conda-config"
+path = "~/dotfiles/conda"
+startup_command = "vim .condarc"
+
+[[session]]
+name = "brew-config"
+path = "~/dotfiles/brew"
+startup_command = "vim .config/homebrew-bundle/Brewfile"
+
+[[session]]
+name = "git-config"
+path = "~/dotfiles/git"
+startup_command = "vim .config/git/config"
+
+[[session]]
+name = "starship-config"
+path = "~/dotfiles/starship"
+startup_command = "vim .config/starship.toml"
+
+[[session]]
+name = "tmux-config"
+path = "~/dotfiles/tmux"
+startup_command = "vim .config/tmux/tmux.conf"
+
+[[session]]
+name = "vim-config"
+path = "~/dotfiles/vim"
+
+[[session]]
+name = "ssh-config"
+path = "~/.ssh"
+startup_command = "vim config"
+
+[[session]]
+name = "wiki"
+path = "~/wiki"
+startup_command = "vim index.md"
+
