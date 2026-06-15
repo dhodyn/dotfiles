@@ -1,21 +1,47 @@
-[user]
-	name = Navneet Dhody
-	email = navneet.dhody@gmail.com
-[color]
-	ui = auto
 [core]
 	editor = vim
 	excludesfile = ~/.config/git/ignore
 	hooksPath = ~/.config/git/hooks
+
+[diff]
+	algorithm = histogram
+	tool = vimdiff
+
 [difftool]
 	prompt = false
-[diff]
-	tool = vimdiff
+
 [merge]
 	tool = vimdiff
+
 [mergetool]
 	prompt = false
+
+[rebase]
+	autosquash = true
+	autoStash = true
+
+[rerere]
+	enabled = true
+
+[fetch]
+	prune = true
+
+[push]
+	autoSetupRemote = true
+
+[commit]
+	verbose = true
+	template = ~/.config/git/commit-template
+
+[color]
+	ui = auto
+
 [credential]
 	helper = store
+
 [init]
 	defaultBranch = main
+
+[user]
+	name = Navneet Dhody
+	email = navneet.dhody@gmail.com
