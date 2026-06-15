@@ -10,6 +10,9 @@
 [difftool]
 	prompt = false
 
+[alias]
+	diffdelta = !git diff "$@" | delta --side-by-side
+
 [merge]
 	tool = vimdiff
 
