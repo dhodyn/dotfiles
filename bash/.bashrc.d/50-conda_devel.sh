@@ -1,4 +1,4 @@
 [[ ! $(command -v conda) ]] && return
 
-conda activate devel
+[[ -z "${CONDA_DEFAULT_ENV}" ]] && conda activate devel
 
