@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+current_branch=$(git symbolic-ref HEAD 2>/dev/null | sed 's/refs\/heads\///')
+protected_branches=("master" "main")
+for branch in "${protected_branches[@]}"; do
+    if [ "${current_branch}" = "${branch}" ]; then
+        echo "You cannot commit directly to the ${current_branch} branch."
+        exit 1
+    fi
+done
+exit 0

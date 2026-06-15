@@ -59,18 +59,18 @@ let g:lsp_diagnostics_echo_cursor = 0
 let g:lsp_diagnostics_float_cursor = 0
 let g:lsp_diagnostics_float_insert_mode_enabled = 0
 let g:lsp_diagnostics_virtual_text_enabled = 1
-let g:lsp_diagnostics_virtual_text_insert_mode_enabled = 0
-let g:lsp_diagnostics_virtual_text_prefix = "> "
-let g:lsp_diagnostics_virtual_text_align = "below"
+let g:lsp_diagnostics_virtual_text_align = "after"
+let g:lsp_diagnostics_virtual_text_prefix = " > "
 let g:lsp_diagnostics_highlights_enabled = 0
 let g:lsp_diagnostics_signs_insert_mode_enabled = 0
+let g:lsp_document_code_action_signs_enabled = 0
 
 if (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
-    let g:lsp_diagnostics_signs_error = {'text': '✗'}
-    let g:lsp_diagnostics_signs_warning = {'text': '‼'}
-    let g:lsp_diagnostics_signs_information = {'text': '❯'}
-    let g:lsp_diagnostics_signs_hint = {'text': '⚙'}
-    let g:lsp_document_code_action_signs_hint = {'text': '☇'}
+    let g:lsp_diagnostics_signs_error = {'text': ''}
+    let g:lsp_diagnostics_signs_warning = {'text': ''}
+    let g:lsp_diagnostics_signs_information = {'text': ''}
+    let g:lsp_diagnostics_signs_hint = {'text': ''}
+    let g:lsp_document_code_action_signs_hint = {'text': '🔧'}
     let g:lsp_diagnostics_virtual_text_prefix = " ‣ "
 endif
 

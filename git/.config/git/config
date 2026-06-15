@@ -5,7 +5,8 @@
 	ui = auto
 [core]
 	editor = vim
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.config/git/ignore
+	hooksPath = ~/.config/git/hooks
 [difftool]
 	prompt = false
 [diff]
