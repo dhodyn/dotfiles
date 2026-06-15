@@ -21,27 +21,27 @@ startup_command = "vim .condarc"
 
 [[session]]
 name = "brew-config"
-path = "~/dotfiles/brew"
-startup_command = "vim .config/homebrew-bundle/Brewfile"
+path = "~/dotfiles/brew/.config/homebrew-bundle"
+startup_command = "vim Brewfile"
 
 [[session]]
 name = "git-config"
-path = "~/dotfiles/git"
-startup_command = "vim .config/git/config"
+path = "~/dotfiles/git/.config/git"
+startup_command = "vim config"
 
 [[session]]
 name = "starship-config"
-path = "~/dotfiles/starship"
-startup_command = "vim .config/starship.toml"
+path = "~/dotfiles/starship/.config"
+startup_command = "vim starship.toml"
 
 [[session]]
 name = "tmux-config"
-path = "~/dotfiles/tmux"
-startup_command = "vim .config/tmux/tmux.conf"
+path = "~/dotfiles/tmux/.config/tmux"
+startup_command = "vim tmux.conf"
 
 [[session]]
 name = "vim-config"
-path = "~/dotfiles/vim"
+path = "~/dotfiles/vim/.vim"
 
 [[session]]
 name = "ssh-config"
