@@ -53,3 +53,8 @@ name = "wiki"
 path = "~/wiki"
 startup_command = "vim index.md"
 
+[[session]]
+name = "sesh-config"
+path = "~/dotfiles/sesh/.config/sesh"
+startup_command = "vim sesh.toml"
+
