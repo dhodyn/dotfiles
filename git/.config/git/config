@@ -34,7 +34,6 @@
 
 [commit]
 	verbose = true
-	template = ~/.config/git/commit-template
 
 [color]
 	ui = auto
