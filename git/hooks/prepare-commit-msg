@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# Strips template comment lines from the commit message
-# The template acts as a reference — no enforcement
-set -euo pipefail
-sed -i '/^#/d' "$1"
