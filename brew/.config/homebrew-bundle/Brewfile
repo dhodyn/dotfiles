@@ -1,5 +1,5 @@
 brew "act"
-brew "anomalyco/tap/opencode"
+brew "anomalyco/tap/opencode", trusted: true
 brew "bat"
 brew "cosign"
 brew "delta"
