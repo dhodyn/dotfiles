@@ -58,3 +58,8 @@ name = "sesh-config"
 path = "~/dotfiles/sesh/.config/sesh"
 startup_command = "vim sesh.toml"
 
+[[session]]
+name = "scratch"
+path = "/tmp"
+startup_command = "vim"
+
