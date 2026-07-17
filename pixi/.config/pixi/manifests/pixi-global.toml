@@ -180,3 +180,8 @@ channels = ["conda-forge"]
 dependencies = { ghostty = "*" }
 exposed = { ghostty = "ghostty" }
 shortcuts = ["ghostty"]
+
+[envs.gh]
+channels = ["conda-forge"]
+dependencies = { gh = "*" }
+exposed = { gh = "gh" }
