@@ -1,10 +1,5 @@
 version = 1
 
-[envs.stow]
-channels = ["conda-forge"]
-dependencies = { stow = "*" }
-exposed = { chkstow = "chkstow", stow = "stow" }
-
 [envs.vim]
 channels = ["conda-forge"]
 dependencies = { vim = "*" }
@@ -14,11 +9,6 @@ exposed = { ex = "ex", rview = "rview", rvim = "rvim", view = "view", vim = "vim
 channels = ["conda-forge"]
 dependencies = { starship = "*" }
 exposed = { starship = "starship" }
-
-[envs.tmux]
-channels = ["conda-forge"]
-dependencies = { tmux = "*" }
-exposed = { tmux = "tmux" }
 
 [envs.bat]
 channels = ["conda-forge"]
@@ -174,3 +164,13 @@ exposed = { ctags = "ctags", optscript = "optscript", readtags = "readtags" }
 channels = ["conda-forge"]
 dependencies = { unzip = "*" }
 exposed = { funzip = "funzip", unzip = "unzip", unzipsfx = "unzipsfx", zipgrep = "zipgrep", zipinfo = "zipinfo" }
+
+[envs.stow]
+channels = ["conda-forge"]
+dependencies = { stow = "*" }
+exposed = { chkstow = "chkstow", stow = "stow" }
+
+[envs.tmux]
+channels = ["conda-forge"]
+dependencies = { tmux = "*" }
+exposed = { tmux = "tmux" }
