@@ -174,8 +174,3 @@ exposed = { chkstow = "chkstow", stow = "stow" }
 channels = ["conda-forge"]
 dependencies = { tmux = "*" }
 exposed = { tmux = "tmux" }
-
-[envs.distrobox]
-channels = ["conda-forge"]
-dependencies = { distrobox = "*" }
-exposed = { distrobox = "distrobox", distrobox-assemble = "distrobox-assemble", distrobox-create = "distrobox-create", distrobox-enter = "distrobox-enter", distrobox-ephemeral = "distrobox-ephemeral", distrobox-export = "distrobox-export", distrobox-generate-entry = "distrobox-generate-entry", distrobox-host-exec = "distrobox-host-exec", distrobox-init = "distrobox-init", distrobox-list = "distrobox-list", distrobox-rm = "distrobox-rm", distrobox-stop = "distrobox-stop", distrobox-upgrade = "distrobox-upgrade" }
