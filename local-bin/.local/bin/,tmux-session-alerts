@@ -3,6 +3,8 @@ set -eou pipefail
 
 current_session=$(tmux display-message -p '#S')
 alert_sessions=$(tmux list-sessions -F '#S #{session_alerts}' | while read session has_alerts; do
-  [[ "${session}" != "${current_session}" ]] && [[ -n "${has_alerts}" ]] && echo "${session}!"
+  if [[ "${session}" != "${current_session}" ]] && [[ -n "${has_alerts}" ]]; then
+    echo "${session}!"
+  fi
 done | paste -sd ' ')
-echo -n " ${alert_sessions} "
+[[ -n "${alert_sessions}" ]] && echo -n " ${alert_sessions} "
