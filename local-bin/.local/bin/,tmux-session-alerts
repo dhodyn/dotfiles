@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -eou pipefail
 
 current_session=$(tmux display-message -p '#S')
 alert_sessions=$(tmux list-sessions -F '#S #{session_alerts}' | while read session has_alerts; do
