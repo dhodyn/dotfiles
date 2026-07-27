@@ -1,10 +1,55 @@
 #!/usr/bin/env bash
+
 set -euo pipefail
 
-current_session=$(tmux display-message -p '#S')
-alert_sessions=$(tmux list-sessions -F '#S #{session_alerts}' | while read -r session has_alerts; do
-  if [[ "${session}" != "${current_session}" ]] && [[ -n "${has_alerts}" ]]; then
-    echo "${session}!"
-  fi
-done | paste -sd ' ')
-[[ -n "${alert_sessions}" ]] && echo -n " ${alert_sessions} " || true
+usage() {
+    cat <<EOF
+Usage: $(basename "${BASH_SOURCE[0]}") [-h] [-v]
+
+List <space> delimited tmux sessions with active alerts
+
+Available options:
+
+-h, --help      Print this help and exit
+-v, --verbose   Print script debug info
+EOF
+    exit
+}
+
+msg() {
+    echo >&2 -e "${1-}"
+}
+
+die() {
+    local MSG=$1
+    local CODE=${2-1}
+    msg "${MSG}"
+    exit "${CODE}"
+}
+
+parse_params() {
+    while :; do
+        case "${1-}" in
+            -h | --help) usage ;;
+            -v | --verbose) set -x ;;
+            -?*) die "Unknown option: $1" ;;
+            *) break ;;
+        esac
+        shift
+    done
+    return 0
+}
+
+main() {
+    current_session=$(tmux display-message -p '#S')
+    session_list=$(tmux list-sessions -F '#S #{session_alerts}')
+    alert_sessions=$(while read -r session_name session_alerts; do
+        [[ "${session_name}" != "${current_session}" ]] || continue
+        [[ -n "${session_alerts}" ]] || continue
+        echo "${session_name}!"
+    done <<< "${session_list}" | paste -sd ' ')
+    [[ -n "${alert_sessions}" ]] && echo -n " ${alert_sessions} " || true
+}
+
+parse_params "$@"
+main
