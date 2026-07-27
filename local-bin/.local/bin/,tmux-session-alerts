@@ -2,7 +2,7 @@
 set -eou pipefail
 
 current_session=$(tmux display-message -p '#S')
-alert_sessions=$(tmux list-sessions -F '#S #{session_alerts}' | while read session has_alerts; do
+alert_sessions=$(tmux list-sessions -F '#S #{session_alerts}' | while read -r session has_alerts; do
   if [[ "${session}" != "${current_session}" ]] && [[ -n "${has_alerts}" ]]; then
     echo "${session}!"
   fi
