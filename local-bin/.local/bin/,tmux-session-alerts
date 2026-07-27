@@ -44,9 +44,9 @@ main() {
     current_session=$(tmux display-message -p '#S')
     session_list=$(tmux list-sessions -F '#S #{session_alerts}')
     alert_sessions=$(while read -r session_name session_alerts; do
-        if [[ "${session_name}" != "${current_session}" ]] && [[ -n "${session_alerts}" ]]; then
-            echo "${session_name}!"
-        fi
+        [[ "${session_name}" != "${current_session}" ]] || continue
+        [[ -n "${session_alerts}" ]] || continue
+        echo "${session_name}!"
     done <<< "${session_list}" | paste -sd ' ')
     [[ -n "${alert_sessions}" ]] && echo -n " ${alert_sessions} " || true
 }
