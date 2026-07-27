@@ -15,19 +15,41 @@ name = "bash-config"
 path = "~/dotfiles/bash"
 
 [[session]]
-name = "conda-config"
-path = "~/dotfiles/conda"
-startup_command = "vim .condarc"
-
-[[session]]
 name = "brew-config"
 path = "~/dotfiles/brew/.config/homebrew-bundle"
 startup_command = "vim Brewfile"
 
 [[session]]
+name = "conda-config"
+path = "~/dotfiles/conda"
+startup_command = "vim .condarc"
+
+[[session]]
+name = "distrobox-config"
+path = "~/dotfiles/distrobox/.config/distrobox"
+
+[[session]]
+name = "ghostty-config"
+path = "~/dotfiles/ghostty/.config/ghostty"
+startup_command = "vim config.ghostty"
+
+[[session]]
 name = "git-config"
 path = "~/dotfiles/git/.config/git"
 startup_command = "vim config"
+
+[[session]]
+name = "local-bin"
+path = "~/dotfiles/local-bin/.local/bin"
+
+[[session]]
+name = "pixi-config"
+path = "~/dotfiles/pixi/.config/pixi"
+
+[[session]]
+name = "sesh-config"
+path = "~/dotfiles/sesh/.config/sesh"
+startup_command = "vim sesh.toml"
 
 [[session]]
 name = "starship-config"
@@ -52,11 +74,6 @@ startup_command = "vim config"
 name = "wiki"
 path = "~/wiki"
 startup_command = "vim index.md"
-
-[[session]]
-name = "sesh-config"
-path = "~/dotfiles/sesh/.config/sesh"
-startup_command = "vim sesh.toml"
 
 [[session]]
 name = "scratch"
