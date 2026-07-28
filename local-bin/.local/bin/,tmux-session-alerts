@@ -16,15 +16,15 @@ EOF
     exit
 }
 
-msg() {
+stderr() {
     echo >&2 -e "${1-}"
 }
 
 die() {
-    local MSG=$1
-    local CODE=${2-1}
-    msg "${MSG}"
-    exit "${CODE}"
+    local message=$1
+    local exit_code=${2-1}
+    stderr "${message}"
+    exit "${exit_code}"
 }
 
 parse_params() {
