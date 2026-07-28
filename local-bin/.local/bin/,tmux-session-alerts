@@ -41,8 +41,8 @@ parse_params() {
 }
 
 main() {
-    current_session=$(tmux display-message -p "#{session_name}")
-    sessions=$(tmux list-sessions -F "#{session_name} #{session_alerts}")
+    current_session=$(tmux display-message -p "#S")
+    sessions=$(tmux list-sessions -F "#S #{session_alerts}")
     alert_sessions=$(while read -r session_name session_alerts; do
         [[ "${session_name}" != "${current_session}" ]] || continue
         [[ -n "${session_alerts}" ]] || continue
