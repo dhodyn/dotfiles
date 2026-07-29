@@ -76,7 +76,7 @@ path = "~/wiki"
 startup_command = "vim index.md"
 
 [[session]]
-name = "scratch"
+name = "tmp"
 path = "/tmp"
 startup_command = "vim"
 
