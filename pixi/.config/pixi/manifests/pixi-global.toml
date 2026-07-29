@@ -185,3 +185,13 @@ shortcuts = ["ghostty"]
 channels = ["conda-forge"]
 dependencies = { gh = "*" }
 exposed = { gh = "gh" }
+
+[envs.ty]
+channels = ["conda-forge"]
+dependencies = { ty = "*" }
+exposed = { ty = "ty" }
+
+[envs.ruff]
+channels = ["conda-forge"]
+dependencies = { ruff = "*" }
+exposed = { ruff = "ruff" }
