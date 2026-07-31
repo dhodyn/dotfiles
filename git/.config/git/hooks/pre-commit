@@ -3,4 +3,7 @@
 current_branch=$(git symbolic-ref HEAD 2>/dev/null | sed 's/refs\/heads\///')
 protected_branches=("master" "main")
 
-[[ "${protected_branches[@]}" =~ "${current_branch}" ]] && echo "You cannot commit directly to the ${current_branch} branch." && exit 1
+if [[ "${protected_branches[@]}" =~ "${current_branch}" ]]; then
+    echo "You cannot commit directly to the ${current_branch} branch."
+    exit 1
+fi
