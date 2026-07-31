@@ -195,3 +195,8 @@ exposed = { ty = "ty" }
 channels = ["conda-forge"]
 dependencies = { ruff = "*" }
 exposed = { ruff = "ruff" }
+
+[envs.go-shfmt]
+channels = ["conda-forge"]
+dependencies = { go-shfmt = "*" }
+exposed = { gosh = "gosh", shfmt = "shfmt" }
