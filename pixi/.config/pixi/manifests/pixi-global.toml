@@ -200,3 +200,8 @@ exposed = { ruff = "ruff" }
 channels = ["conda-forge"]
 dependencies = { go-shfmt = "*" }
 exposed = { gosh = "gosh", shfmt = "shfmt" }
+
+[envs.ffmpeg]
+channels = ["conda-forge"]
+dependencies = { ffmpeg = "*" }
+exposed = { ffmpeg = "ffmpeg", ffplay = "ffplay", ffprobe = "ffprobe" }
