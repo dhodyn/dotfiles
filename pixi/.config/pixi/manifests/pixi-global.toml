@@ -205,3 +205,8 @@ exposed = { gosh = "gosh", shfmt = "shfmt" }
 channels = ["conda-forge"]
 dependencies = { ffmpeg = "*" }
 exposed = { ffmpeg = "ffmpeg", ffplay = "ffplay", ffprobe = "ffprobe" }
+
+[envs.actionlint]
+channels = ["conda-forge"]
+dependencies = { actionlint = "*" }
+exposed = { actionlint = "actionlint" }
