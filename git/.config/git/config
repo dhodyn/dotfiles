@@ -1,3 +1,15 @@
+[alias]
+	diffdelta = !git diff "$@" | delta --side-by-side
+
+[branch]
+	autoSetupRebase = always
+
+[color]
+	ui = auto
+
+[commit]
+	verbose = true
+
 [core]
 	editor = vim
 	excludesfile = ~/.config/git/ignore
@@ -10,11 +22,15 @@
 [difftool]
 	prompt = false
 
-[alias]
-	diffdelta = !git diff "$@" | delta --side-by-side
+[fetch]
+	prune = true
+
+[init]
+	defaultBranch = main
 
 [merge]
 	tool = vimdiff
+	ff = only
 
 [mergetool]
 	prompt = false
@@ -26,24 +42,19 @@
 [rerere]
 	enabled = true
 
-[fetch]
-	prune = true
+[pull]
+	rebase = true
 
 [push]
 	autoSetupRemote = true
-
-[commit]
-	verbose = true
-
-[color]
-	ui = auto
-
-[credential]
-	helper = store
-
-[init]
-	defaultBranch = main
+	default = simple
 
 [user]
 	name = Navneet Dhody
 	email = navneet.dhody@gmail.com
+
+[credential]
+	helper = store
+
+[credential "https://github.com"]
+	helper = !gh auth git-credential
