@@ -7,9 +7,6 @@
 [color]
 	ui = auto
 
-[commit]
-	verbose = true
-
 [core]
 	editor = vim
 	excludesfile = ~/.config/git/ignore
@@ -44,6 +41,7 @@
 
 [pull]
 	rebase = true
+	ff = only
 
 [push]
 	autoSetupRemote = true
