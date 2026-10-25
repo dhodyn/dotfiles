@@ -153,7 +153,7 @@ exposed = { delta = "delta" }
 [envs.make]
 channels = ["conda-forge"]
 dependencies = { make = "*" }
-exposed = { make = "make" }
+exposed = { make = "make", gmake = "gmake" }
 
 [envs.universal-ctags]
 channels = ["conda-forge"]
