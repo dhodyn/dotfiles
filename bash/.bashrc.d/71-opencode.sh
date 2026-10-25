@@ -5,4 +5,4 @@ export PATH
 
 [[ ! $(command -v opencode) ]] && return
 
-eval "$(opencode completion)"
+eval "$(opencode --completions bash)"
